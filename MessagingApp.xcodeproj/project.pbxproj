@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7887CBCE21D4A66C00318C1C /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887CBCD21D4A66C00318C1C /* ValidationResult.swift */; };
+		7887CBD021D4A6C900318C1C /* Ivalidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887CBCF21D4A6C900318C1C /* Ivalidation.swift */; };
+		7887CBD221D4A7F900318C1C /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887CBD121D4A7F900318C1C /* LoginValidator.swift */; };
+		7887CBD621D4AA9900318C1C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887CBD521D4AA9900318C1C /* LoginRequest.swift */; };
+		7887CBD821D4AD5400318C1C /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887CBD721D4AD5400318C1C /* LoginManager.swift */; };
 		78E413D321D4A4DE0014A7FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E413D221D4A4DE0014A7FD /* AppDelegate.swift */; };
 		78E413D521D4A4DE0014A7FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E413D421D4A4DE0014A7FD /* ViewController.swift */; };
 		78E413D821D4A4DE0014A7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E413D621D4A4DE0014A7FD /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7887CBCD21D4A66C00318C1C /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		7887CBCF21D4A6C900318C1C /* Ivalidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ivalidation.swift; sourceTree = "<group>"; };
+		7887CBD121D4A7F900318C1C /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
+		7887CBD521D4AA9900318C1C /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		7887CBD721D4AD5400318C1C /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		78E413CF21D4A4DE0014A7FD /* MessagingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E413D221D4A4DE0014A7FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78E413D421D4A4DE0014A7FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7887CBC821D4A5E900318C1C /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				7887CBCC21D4A63700318C1C /* Validation */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		7887CBC921D4A5F800318C1C /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				7887CBD421D4AA6F00318C1C /* ResponseContract */,
+				7887CBD321D4AA6000318C1C /* RequestContract */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		7887CBCA21D4A60100318C1C /* Accessor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Accessor;
+			sourceTree = "<group>";
+		};
+		7887CBCB21D4A60800318C1C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7887CBD721D4AD5400318C1C /* LoginManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7887CBCC21D4A63700318C1C /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				7887CBCD21D4A66C00318C1C /* ValidationResult.swift */,
+				7887CBCF21D4A6C900318C1C /* Ivalidation.swift */,
+				7887CBD121D4A7F900318C1C /* LoginValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		7887CBD321D4AA6000318C1C /* RequestContract */ = {
+			isa = PBXGroup;
+			children = (
+				7887CBD521D4AA9900318C1C /* LoginRequest.swift */,
+			);
+			path = RequestContract;
+			sourceTree = "<group>";
+		};
+		7887CBD421D4AA6F00318C1C /* ResponseContract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseContract;
+			sourceTree = "<group>";
+		};
 		78E413C621D4A4DE0014A7FD = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +121,10 @@
 		78E413D121D4A4DE0014A7FD /* MessagingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7887CBC821D4A5E900318C1C /* Engine */,
+				7887CBC921D4A5F800318C1C /* Contracts */,
+				7887CBCA21D4A60100318C1C /* Accessor */,
+				7887CBCB21D4A60800318C1C /* Manager */,
 				78E413D221D4A4DE0014A7FD /* AppDelegate.swift */,
 				78E413D421D4A4DE0014A7FD /* ViewController.swift */,
 				78E413D621D4A4DE0014A7FD /* Main.storyboard */,
@@ -135,8 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7887CBD021D4A6C900318C1C /* Ivalidation.swift in Sources */,
 				78E413D521D4A4DE0014A7FD /* ViewController.swift in Sources */,
+				7887CBD821D4AD5400318C1C /* LoginManager.swift in Sources */,
 				78E413D321D4A4DE0014A7FD /* AppDelegate.swift in Sources */,
+				7887CBD621D4AA9900318C1C /* LoginRequest.swift in Sources */,
+				7887CBCE21D4A66C00318C1C /* ValidationResult.swift in Sources */,
+				7887CBD221D4A7F900318C1C /* LoginValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
