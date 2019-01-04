@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0377BF922095DB59008D6A03 /* StudentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377BF902095DB59008D6A03 /* StudentDetailsView.swift */; };
+		0377BF932095DB59008D6A03 /* StudentDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0377BF912095DB59008D6A03 /* StudentDetailsView.xib */; };
+		037C395F2097692200E44B25 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C395E2097692200E44B25 /* RegistrationRouter.swift */; };
+		037C39612097698F00E44B25 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C39602097698F00E44B25 /* APIConstants.swift */; };
+		037C396320976A4B00E44B25 /* EVModelModified.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C396220976A4A00E44B25 /* EVModelModified.swift */; };
+		037C396520976A7900E44B25 /* RegisterationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C396420976A7900E44B25 /* RegisterationAPI.swift */; };
+		037C396720976AE800E44B25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C396620976AE800E44B25 /* User.swift */; };
+		037C396920976E0C00E44B25 /* SSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C396820976E0C00E44B25 /* SSError.swift */; };
+		037C396D20977D4B00E44B25 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C396C20977D4B00E44B25 /* Utility.swift */; };
+		037C396F20977D5C00E44B25 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C396E20977D5C00E44B25 /* AppManager.swift */; };
+		037C39712097809800E44B25 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C39702097809800E44B25 /* Student.swift */; };
+		037C3973209780B500E44B25 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C3972209780B500E44B25 /* Circuit.swift */; };
+		037C3975209780C800E44B25 /* DetailWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C3974209780C800E44B25 /* DetailWrapper.swift */; };
+		037C39782097827000E44B25 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C39762097826F00E44B25 /* QRCodeScannerViewController.swift */; };
+		037C39792097827000E44B25 /* QRCodeScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037C39772097827000E44B25 /* QRCodeScannerViewController.xib */; };
+		03A34088209845BA0032DD92 /* GOTHIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 03A34084209845BA0032DD92 /* GOTHIC.TTF */; };
+		03A34089209845BA0032DD92 /* gothici.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03A34085209845BA0032DD92 /* gothici.ttf */; };
+		03A3408A209845BA0032DD92 /* gothicb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03A34086209845BA0032DD92 /* gothicb.ttf */; };
+		03A3408B209845BA0032DD92 /* GOTHICBI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 03A34087209845BA0032DD92 /* GOTHICBI.TTF */; };
+		03A3408D209845D70032DD92 /* FontAndColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3408C209845D70032DD92 /* FontAndColor.swift */; };
+		03B7BA822094BE2200A8B730 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7BA802094BE2200A8B730 /* LoginView.swift */; };
+		03B7BA832094BE2200A8B730 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B7BA812094BE2200A8B730 /* LoginView.xib */; };
+		03B7BA872094DF8900A8B730 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7BA852094DF8900A8B730 /* ScannerView.swift */; };
+		03B7BA882094DF8900A8B730 /* ScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B7BA862094DF8900A8B730 /* ScannerView.xib */; };
+		03B8110A2094BD7300C39E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B811092094BD7300C39E43 /* AppDelegate.swift */; };
+		03B811112094BD7500C39E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B811102094BD7500C39E43 /* Assets.xcassets */; };
+		03B811142094BD7500C39E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B811122094BD7500C39E43 /* LaunchScreen.storyboard */; };
+		03B8111F2094BD7500C39E43 /* HKU_RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8111E2094BD7500C39E43 /* HKU_RegistrationTests.swift */; };
+		03B8112A2094BD7500C39E43 /* HKU_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B811292094BD7500C39E43 /* HKU_RegistrationUITests.swift */; };
+		187C46D621ABDDE700F86FF2 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C46D521ABDDE600F86FF2 /* YPDrawSignatureView.swift */; };
+		3EFA301FC90C7C5BF3CCC5BA /* Pods_HKU_RegistrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95ADA426C13A1816F29F909F /* Pods_HKU_RegistrationUITests.framework */; };
+		71B77C3A4B59C0939B0D1686 /* Pods_HKU_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BCC6250B1D4D730927BC2B /* Pods_HKU_Registration.framework */; };
+		CFF05FFCA3E25CE3D8892B43 /* Pods_HKU_RegistrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41813D5D5D5493097C8D01D2 /* Pods_HKU_RegistrationTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03B8111B2094BD7500C39E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B810FE2094BD7300C39E43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B811052094BD7300C39E43;
+			remoteInfo = "HKU-Registration";
+		};
+		03B811262094BD7500C39E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B810FE2094BD7300C39E43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B811052094BD7300C39E43;
+			remoteInfo = "HKU-Registration";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0377BF902095DB59008D6A03 /* StudentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailsView.swift; sourceTree = "<group>"; };
+		0377BF912095DB59008D6A03 /* StudentDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentDetailsView.xib; sourceTree = "<group>"; };
+		037C395E2097692200E44B25 /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		037C39602097698F00E44B25 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		037C396220976A4A00E44B25 /* EVModelModified.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVModelModified.swift; sourceTree = "<group>"; };
+		037C396420976A7900E44B25 /* RegisterationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationAPI.swift; sourceTree = "<group>"; };
+		037C396620976AE800E44B25 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		037C396820976E0C00E44B25 /* SSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSError.swift; sourceTree = "<group>"; };
+		037C396C20977D4B00E44B25 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		037C396E20977D5C00E44B25 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		037C39702097809800E44B25 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		037C3972209780B500E44B25 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		037C3974209780C800E44B25 /* DetailWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWrapper.swift; sourceTree = "<group>"; };
+		037C39762097826F00E44B25 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		037C39772097827000E44B25 /* QRCodeScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeScannerViewController.xib; sourceTree = "<group>"; };
+		03A34084209845BA0032DD92 /* GOTHIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTHIC.TTF; sourceTree = "<group>"; };
+		03A34085209845BA0032DD92 /* gothici.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothici.ttf; sourceTree = "<group>"; };
+		03A34086209845BA0032DD92 /* gothicb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothicb.ttf; sourceTree = "<group>"; };
+		03A34087209845BA0032DD92 /* GOTHICBI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOTHICBI.TTF; sourceTree = "<group>"; };
+		03A3408C209845D70032DD92 /* FontAndColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAndColor.swift; sourceTree = "<group>"; };
+		03B7BA802094BE2200A8B730 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		03B7BA812094BE2200A8B730 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		03B7BA852094DF8900A8B730 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		03B7BA862094DF8900A8B730 /* ScannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScannerView.xib; sourceTree = "<group>"; };
+		03B811062094BD7300C39E43 /* HKU-Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HKU-Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B811092094BD7300C39E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03B811102094BD7500C39E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B811132094BD7500C39E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03B811152094BD7500C39E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B8111A2094BD7500C39E43 /* HKU-RegistrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HKU-RegistrationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B8111E2094BD7500C39E43 /* HKU_RegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKU_RegistrationTests.swift; sourceTree = "<group>"; };
+		03B811202094BD7500C39E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B811252094BD7500C39E43 /* HKU-RegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HKU-RegistrationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B811292094BD7500C39E43 /* HKU_RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKU_RegistrationUITests.swift; sourceTree = "<group>"; };
+		03B8112B2094BD7500C39E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187C46D521ABDDE600F86FF2 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		1B1A1D9BC25B7CA533D51DE2 /* Pods-HKU-Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-Registration/Pods-HKU-Registration.release.xcconfig"; sourceTree = "<group>"; };
+		41813D5D5D5493097C8D01D2 /* Pods_HKU_RegistrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKU_RegistrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C15E10846C43FA41E9BD400 /* Pods-HKU-RegistrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-RegistrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-RegistrationUITests/Pods-HKU-RegistrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95ADA426C13A1816F29F909F /* Pods_HKU_RegistrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKU_RegistrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F339DB04C2B4C65FD7CEA3 /* Pods-HKU-RegistrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-RegistrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-RegistrationTests/Pods-HKU-RegistrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4F9A0DB07E220AB633E783F /* Pods-HKU-Registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-Registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-Registration/Pods-HKU-Registration.debug.xcconfig"; sourceTree = "<group>"; };
+		CE7E368C17229350502CCFFB /* Pods-HKU-RegistrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-RegistrationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-RegistrationUITests/Pods-HKU-RegistrationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9DD8A3A40ABB6023CAFFBE8 /* Pods-HKU-RegistrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-RegistrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-RegistrationTests/Pods-HKU-RegistrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3BCC6250B1D4D730927BC2B /* Pods_HKU_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKU_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03B811032094BD7300C39E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B77C3A4B59C0939B0D1686 /* Pods_HKU_Registration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B811172094BD7500C39E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF05FFCA3E25CE3D8892B43 /* Pods_HKU_RegistrationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B811222094BD7500C39E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EFA301FC90C7C5BF3CCC5BA /* Pods_HKU_RegistrationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0377BF8F2095DB38008D6A03 /* StudentDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				0377BF902095DB59008D6A03 /* StudentDetailsView.swift */,
+				0377BF912095DB59008D6A03 /* StudentDetailsView.xib */,
+			);
+			path = StudentDetailsView;
+			sourceTree = "<group>";
+		};
+		037C395D209768EB00E44B25 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				037C396820976E0C00E44B25 /* SSError.swift */,
+				037C39602097698F00E44B25 /* APIConstants.swift */,
+				037C395E2097692200E44B25 /* RegistrationRouter.swift */,
+				037C396220976A4A00E44B25 /* EVModelModified.swift */,
+				037C396420976A7900E44B25 /* RegisterationAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		03A34083209845A20032DD92 /* FontAndColor */ = {
+			isa = PBXGroup;
+			children = (
+				03A3408C209845D70032DD92 /* FontAndColor.swift */,
+				03A34084209845BA0032DD92 /* GOTHIC.TTF */,
+				03A34086209845BA0032DD92 /* gothicb.ttf */,
+				03A34087209845BA0032DD92 /* GOTHICBI.TTF */,
+				03A34085209845BA0032DD92 /* gothici.ttf */,
+			);
+			path = FontAndColor;
+			sourceTree = "<group>";
+		};
+		03B7BA7C2094BDFB00A8B730 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				187C46D521ABDDE600F86FF2 /* YPDrawSignatureView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03B7BA7D2094BE0200A8B730 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0377BF8F2095DB38008D6A03 /* StudentDetailsView */,
+				03B7BA842094DF6E00A8B730 /* ScannerView */,
+				03B7BA7F2094BE0F00A8B730 /* LoginView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03B7BA7E2094BE0700A8B730 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				037C396620976AE800E44B25 /* User.swift */,
+				037C39702097809800E44B25 /* Student.swift */,
+				037C3972209780B500E44B25 /* Circuit.swift */,
+				037C3974209780C800E44B25 /* DetailWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03B7BA7F2094BE0F00A8B730 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				03B7BA802094BE2200A8B730 /* LoginView.swift */,
+				03B7BA812094BE2200A8B730 /* LoginView.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		03B7BA842094DF6E00A8B730 /* ScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				03B7BA852094DF8900A8B730 /* ScannerView.swift */,
+				03B7BA862094DF8900A8B730 /* ScannerView.xib */,
+				037C39762097826F00E44B25 /* QRCodeScannerViewController.swift */,
+				037C39772097827000E44B25 /* QRCodeScannerViewController.xib */,
+			);
+			path = ScannerView;
+			sourceTree = "<group>";
+		};
+		03B810FD2094BD7300C39E43 = {
+			isa = PBXGroup;
+			children = (
+				03B811082094BD7300C39E43 /* HKU-Registration */,
+				03B8111D2094BD7500C39E43 /* HKU-RegistrationTests */,
+				03B811282094BD7500C39E43 /* HKU-RegistrationUITests */,
+				03B811072094BD7300C39E43 /* Products */,
+				23E38BB6BAF0A12C6ED132EC /* Pods */,
+				D437168B59BD921D19CB8368 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03B811072094BD7300C39E43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03B811062094BD7300C39E43 /* HKU-Registration.app */,
+				03B8111A2094BD7500C39E43 /* HKU-RegistrationTests.xctest */,
+				03B811252094BD7500C39E43 /* HKU-RegistrationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03B811082094BD7300C39E43 /* HKU-Registration */ = {
+			isa = PBXGroup;
+			children = (
+				03B811092094BD7300C39E43 /* AppDelegate.swift */,
+				037C396C20977D4B00E44B25 /* Utility.swift */,
+				037C396E20977D5C00E44B25 /* AppManager.swift */,
+				03A34083209845A20032DD92 /* FontAndColor */,
+				037C395D209768EB00E44B25 /* APIs */,
+				03B7BA7E2094BE0700A8B730 /* Model */,
+				03B7BA7D2094BE0200A8B730 /* View */,
+				03B7BA7C2094BDFB00A8B730 /* Controller */,
+				03B811102094BD7500C39E43 /* Assets.xcassets */,
+				03B811122094BD7500C39E43 /* LaunchScreen.storyboard */,
+				03B811152094BD7500C39E43 /* Info.plist */,
+			);
+			path = "HKU-Registration";
+			sourceTree = "<group>";
+		};
+		03B8111D2094BD7500C39E43 /* HKU-RegistrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				03B8111E2094BD7500C39E43 /* HKU_RegistrationTests.swift */,
+				03B811202094BD7500C39E43 /* Info.plist */,
+			);
+			path = "HKU-RegistrationTests";
+			sourceTree = "<group>";
+		};
+		03B811282094BD7500C39E43 /* HKU-RegistrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03B811292094BD7500C39E43 /* HKU_RegistrationUITests.swift */,
+				03B8112B2094BD7500C39E43 /* Info.plist */,
+			);
+			path = "HKU-RegistrationUITests";
+			sourceTree = "<group>";
+		};
+		23E38BB6BAF0A12C6ED132EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4F9A0DB07E220AB633E783F /* Pods-HKU-Registration.debug.xcconfig */,
+				1B1A1D9BC25B7CA533D51DE2 /* Pods-HKU-Registration.release.xcconfig */,
+				E9DD8A3A40ABB6023CAFFBE8 /* Pods-HKU-RegistrationTests.debug.xcconfig */,
+				C2F339DB04C2B4C65FD7CEA3 /* Pods-HKU-RegistrationTests.release.xcconfig */,
+				4C15E10846C43FA41E9BD400 /* Pods-HKU-RegistrationUITests.debug.xcconfig */,
+				CE7E368C17229350502CCFFB /* Pods-HKU-RegistrationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D437168B59BD921D19CB8368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3BCC6250B1D4D730927BC2B /* Pods_HKU_Registration.framework */,
+				41813D5D5D5493097C8D01D2 /* Pods_HKU_RegistrationTests.framework */,
+				95ADA426C13A1816F29F909F /* Pods_HKU_RegistrationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03B811052094BD7300C39E43 /* HKU-Registration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B8112E2094BD7500C39E43 /* Build configuration list for PBXNativeTarget "HKU-Registration" */;
+			buildPhases = (
+				9106F22388A84BF3B656C1CE /* [CP] Check Pods Manifest.lock */,
+				03B811022094BD7300C39E43 /* Sources */,
+				03B811032094BD7300C39E43 /* Frameworks */,
+				03B811042094BD7300C39E43 /* Resources */,
+				13EBEDF4BEE64E43258E3EDF /* [CP] Embed Pods Frameworks */,
+				03094162209B5BF700C2A023 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HKU-Registration";
+			productName = "HKU-Registration";
+			productReference = 03B811062094BD7300C39E43 /* HKU-Registration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03B811192094BD7500C39E43 /* HKU-RegistrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B811312094BD7500C39E43 /* Build configuration list for PBXNativeTarget "HKU-RegistrationTests" */;
+			buildPhases = (
+				3AE12EC40018A17155BD10D6 /* [CP] Check Pods Manifest.lock */,
+				03B811162094BD7500C39E43 /* Sources */,
+				03B811172094BD7500C39E43 /* Frameworks */,
+				03B811182094BD7500C39E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B8111C2094BD7500C39E43 /* PBXTargetDependency */,
+			);
+			name = "HKU-RegistrationTests";
+			productName = "HKU-RegistrationTests";
+			productReference = 03B8111A2094BD7500C39E43 /* HKU-RegistrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03B811242094BD7500C39E43 /* HKU-RegistrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B811342094BD7500C39E43 /* Build configuration list for PBXNativeTarget "HKU-RegistrationUITests" */;
+			buildPhases = (
+				198CB9B9765B31162B6E1700 /* [CP] Check Pods Manifest.lock */,
+				03B811212094BD7500C39E43 /* Sources */,
+				03B811222094BD7500C39E43 /* Frameworks */,
+				03B811232094BD7500C39E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B811272094BD7500C39E43 /* PBXTargetDependency */,
+			);
+			name = "HKU-RegistrationUITests";
+			productName = "HKU-RegistrationUITests";
+			productReference = 03B811252094BD7500C39E43 /* HKU-RegistrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03B810FE2094BD7300C39E43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Sachin Indulkar";
+				TargetAttributes = {
+					03B811052094BD7300C39E43 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					03B811192094BD7500C39E43 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 03B811052094BD7300C39E43;
+					};
+					03B811242094BD7500C39E43 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 03B811052094BD7300C39E43;
+					};
+				};
+			};
+			buildConfigurationList = 03B811012094BD7300C39E43 /* Build configuration list for PBXProject "HKU-Registration" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03B810FD2094BD7300C39E43;
+			productRefGroup = 03B811072094BD7300C39E43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03B811052094BD7300C39E43 /* HKU-Registration */,
+				03B811192094BD7500C39E43 /* HKU-RegistrationTests */,
+				03B811242094BD7500C39E43 /* HKU-RegistrationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03B811042094BD7300C39E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B811142094BD7500C39E43 /* LaunchScreen.storyboard in Resources */,
+				03B7BA882094DF8900A8B730 /* ScannerView.xib in Resources */,
+				03A34088209845BA0032DD92 /* GOTHIC.TTF in Resources */,
+				03A3408B209845BA0032DD92 /* GOTHICBI.TTF in Resources */,
+				03B811112094BD7500C39E43 /* Assets.xcassets in Resources */,
+				037C39792097827000E44B25 /* QRCodeScannerViewController.xib in Resources */,
+				03A3408A209845BA0032DD92 /* gothicb.ttf in Resources */,
+				0377BF932095DB59008D6A03 /* StudentDetailsView.xib in Resources */,
+				03A34089209845BA0032DD92 /* gothici.ttf in Resources */,
+				03B7BA832094BE2200A8B730 /* LoginView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B811182094BD7500C39E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B811232094BD7500C39E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03094162209B5BF700C2A023 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0b962eaf6f30018f7442143308bb75d501056e22 9f35de204ccaab077a42e0ffbfab1a62c5deac28aec767362967eb7e1864c935\n";
+		};
+		13EBEDF4BEE64E43258E3EDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HKU-Registration/Pods-HKU-Registration-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MWPhotoBrowser/MWPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/RNLoadingButton-Swift/RNLoadingButton_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNLoadingButton_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HKU-Registration/Pods-HKU-Registration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		198CB9B9765B31162B6E1700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HKU-RegistrationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE12EC40018A17155BD10D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HKU-RegistrationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9106F22388A84BF3B656C1CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HKU-Registration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03B811022094BD7300C39E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B7BA872094DF8900A8B730 /* ScannerView.swift in Sources */,
+				037C3975209780C800E44B25 /* DetailWrapper.swift in Sources */,
+				187C46D621ABDDE700F86FF2 /* YPDrawSignatureView.swift in Sources */,
+				037C396320976A4B00E44B25 /* EVModelModified.swift in Sources */,
+				037C396920976E0C00E44B25 /* SSError.swift in Sources */,
+				037C396F20977D5C00E44B25 /* AppManager.swift in Sources */,
+				037C396D20977D4B00E44B25 /* Utility.swift in Sources */,
+				03B7BA822094BE2200A8B730 /* LoginView.swift in Sources */,
+				037C396520976A7900E44B25 /* RegisterationAPI.swift in Sources */,
+				037C39712097809800E44B25 /* Student.swift in Sources */,
+				037C39782097827000E44B25 /* QRCodeScannerViewController.swift in Sources */,
+				037C39612097698F00E44B25 /* APIConstants.swift in Sources */,
+				037C396720976AE800E44B25 /* User.swift in Sources */,
+				03B8110A2094BD7300C39E43 /* AppDelegate.swift in Sources */,
+				0377BF922095DB59008D6A03 /* StudentDetailsView.swift in Sources */,
+				037C395F2097692200E44B25 /* RegistrationRouter.swift in Sources */,
+				037C3973209780B500E44B25 /* Circuit.swift in Sources */,
+				03A3408D209845D70032DD92 /* FontAndColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B811162094BD7500C39E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B8111F2094BD7500C39E43 /* HKU_RegistrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B811212094BD7500C39E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B8112A2094BD7500C39E43 /* HKU_RegistrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03B8111C2094BD7500C39E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B811052094BD7300C39E43 /* HKU-Registration */;
+			targetProxy = 03B8111B2094BD7500C39E43 /* PBXContainerItemProxy */;
+		};
+		03B811272094BD7500C39E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B811052094BD7300C39E43 /* HKU-Registration */;
+			targetProxy = 03B811262094BD7500C39E43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03B811122094BD7500C39E43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03B811132094BD7500C39E43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03B8112C2094BD7500C39E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mind Your Elders, LLC (6C25WQK63W)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a4e4330b-e567-4808-b380-7256af6638e4";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03B8112D2094BD7500C39E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mind Your Elders, LLC (6C25WQK63W)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a4e4330b-e567-4808-b380-7256af6638e4";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03B8112F2094BD7500C39E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F9A0DB07E220AB633E783F /* Pods-HKU-Registration.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ZZY342JT4Z;
+				INFOPLIST_FILE = "HKU-Registration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.S1T.some1thereapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7a4e63b8-4234-48ac-9f90-3b32ad59642c";
+				PROVISIONING_PROFILE_SPECIFIER = S1TApp_PPDev;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03B811302094BD7500C39E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B1A1D9BC25B7CA533D51DE2 /* Pods-HKU-Registration.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ZZY342JT4Z;
+				INFOPLIST_FILE = "HKU-Registration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.S1T.some1thereapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7a4e63b8-4234-48ac-9f90-3b32ad59642c";
+				PROVISIONING_PROFILE_SPECIFIER = S1TApp_PPDev;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03B811322094BD7500C39E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DD8A3A40ABB6023CAFFBE8 /* Pods-HKU-RegistrationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N763KK6R2C;
+				INFOPLIST_FILE = "HKU-RegistrationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SITech.HKU-RegistrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKU-Registration.app/HKU-Registration";
+			};
+			name = Debug;
+		};
+		03B811332094BD7500C39E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F339DB04C2B4C65FD7CEA3 /* Pods-HKU-RegistrationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N763KK6R2C;
+				INFOPLIST_FILE = "HKU-RegistrationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SITech.HKU-RegistrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKU-Registration.app/HKU-Registration";
+			};
+			name = Release;
+		};
+		03B811352094BD7500C39E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C15E10846C43FA41E9BD400 /* Pods-HKU-RegistrationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N763KK6R2C;
+				INFOPLIST_FILE = "HKU-RegistrationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SITech.HKU-RegistrationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HKU-Registration";
+			};
+			name = Debug;
+		};
+		03B811362094BD7500C39E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE7E368C17229350502CCFFB /* Pods-HKU-RegistrationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N763KK6R2C;
+				INFOPLIST_FILE = "HKU-RegistrationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SITech.HKU-RegistrationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HKU-Registration";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03B811012094BD7300C39E43 /* Build configuration list for PBXProject "HKU-Registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B8112C2094BD7500C39E43 /* Debug */,
+				03B8112D2094BD7500C39E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B8112E2094BD7500C39E43 /* Build configuration list for PBXNativeTarget "HKU-Registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B8112F2094BD7500C39E43 /* Debug */,
+				03B811302094BD7500C39E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B811312094BD7500C39E43 /* Build configuration list for PBXNativeTarget "HKU-RegistrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B811322094BD7500C39E43 /* Debug */,
+				03B811332094BD7500C39E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B811342094BD7500C39E43 /* Build configuration list for PBXNativeTarget "HKU-RegistrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B811352094BD7500C39E43 /* Debug */,
+				03B811362094BD7500C39E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03B810FE2094BD7300C39E43 /* Project object */;
+}

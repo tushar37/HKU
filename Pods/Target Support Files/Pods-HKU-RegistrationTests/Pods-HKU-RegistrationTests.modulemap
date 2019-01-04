@@ -1,0 +1,6 @@
+framework module Pods_HKU_RegistrationTests {
+  umbrella header "Pods-HKU-RegistrationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
