@@ -377,8 +377,8 @@ class SSError: NSObject {
         let nserror =  (error! as NSError).userInfo[kSSErrorObjectKey]
 //        let sserror = nserror as! SSError
 //
-//        return sserror.localizedMessage()
-            return "Please enter data in correct format"
+        return  error.debugDescription
+          //  return "Please enter data in correct format"
         
     }
     

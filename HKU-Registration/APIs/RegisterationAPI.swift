@@ -31,7 +31,7 @@ open class RegisterationAPI {
         session.request(RegistrationRouter.login(parameters: parameters.copy() as! Parameters)).validate().responseJSON (completionHandler:  { data in
             if(SSError.isErrorReponse(operation: data.response)){
 //                failure(SSError.errorWithData(data:data))
-                let error = NSError.init(domain: "Error", code: 422, userInfo: ["message":"Please enter data in correct format"])
+                let error = NSError.init(domain: "Error", code: 422, userInfo: ["message":data.error.debugDescription])//"Please enter data in correct format"
                 failure(error)
             }else{
                 let dictResponse : NSDictionary? = data.result.value as? NSDictionary
