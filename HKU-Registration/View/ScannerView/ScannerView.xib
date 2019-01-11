@@ -13,7 +13,7 @@
         <array key="GOTHIC.TTF">
             <string>CenturyGothic</string>
         </array>
-        <array key="GOTHICBI.TTF">
+        <array key="gothicb.ttf">
             <string>CenturyGothic-Bold</string>
         </array>
     </customFonts>
@@ -21,6 +21,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerView" customModule="HKU_Registration" customModuleProvider="target">
             <connections>
                 <outlet property="lblEventName" destination="QtX-9O-1aG" id="d0L-LL-07o"/>
+                <outlet property="logoImgHeight" destination="uge-ak-zKH" id="snf-gq-TEw"/>
+                <outlet property="logoImgView" destination="fh3-hS-tKW" id="Waq-Ox-LqK"/>
+                <outlet property="logoImgWidth" destination="f3r-Pg-ub3" id="vab-mL-soA"/>
+                <outlet property="tittleLbl" destination="fir-81-0dT" id="10V-Bi-L4d"/>
                 <outlet property="txtEnterCode" destination="yji-VL-Bhn" id="Rte-nA-HLM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -9,16 +9,36 @@
 import UIKit
 import MBProgressHUD
 class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
-
+    @IBOutlet weak var logoImgView: UIImageView!
+    @IBOutlet weak var tittleLbl: UILabel!
+    let nsud = UserDefaults.standard
     @IBOutlet weak var lblEventName: UILabel!
     @IBOutlet weak var txtEnterCode: UITextField!
     
+    @IBOutlet weak var logoImgWidth: NSLayoutConstraint!
+    @IBOutlet weak var logoImgHeight: NSLayoutConstraint!
     var objUser : User?
     var strQRCode : String? = ""
+    
+    func presentView(imageName:String,logoWidth:CGFloat,logoHeight:CGFloat,tittle:String,typeOfString:String)
+    {
+        self.nsud.set(typeOfString, forKey: "SelectedOption")
+        self.logoImgView.image = UIImage(named: imageName)
+        self.logoImgWidth.constant = logoWidth
+        self.logoImgHeight.constant = logoHeight
+        self.tittleLbl.text = tittle
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setData()
+        if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
+        {
+            self.presentView(imageName: "HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1).png", logoWidth: 450, logoHeight: 120, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
+        }else{
+            self.presentView(imageName: "appLogo.png", logoWidth: 200, logoHeight: 180, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
+        }
+        
     }
     
     func setData() {

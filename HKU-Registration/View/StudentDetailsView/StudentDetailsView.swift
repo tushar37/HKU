@@ -48,7 +48,20 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     var qrCode : String? = ""
     var isSearchBtnClicked : Bool = false
     @IBOutlet weak var viewColor: UIView!
+
+    // Signature View
+    @IBOutlet weak var tittleForSignatureView: UILabel!
     
+    @IBOutlet weak var detailsLbl: UITextView!
+    
+    let nsud = UserDefaults.standard
+    
+    func presentView(tittleForSignatureView:String,typeOfString:String,detailsLbl:String)
+    {
+        self.nsud.set(typeOfString, forKey: "SelectedOption")
+        self.detailsLbl.text = detailsLbl
+        self.tittleForSignatureView.text = tittleForSignatureView
+    }
     
     func signatureButtonView(btn:UIButton,color:UIColor,alpha:CGFloat)
     {
@@ -67,6 +80,16 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         signBox.layer.borderWidth = 1.0
         
         self.setData()
+        if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
+        {
+           
+            self.presentView(tittleForSignatureView: "THE UNIVERSITY OF HONG KONG LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing", detailsLbl: "              I, undersigned, am a candidate for the Bachelor of Nursing (FT) programme at the University of Hong Kong and a participant in the Multiple Mini Interview (MMI). I hereby undertake to maintain full confidentiality of all information relative to the content of the stations and interview questions.")
+            
+           // self.presentView(imageName: "HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1).png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
+        }else{
+            self.presentView(tittleForSignatureView: "THE UNIVERSITY OF HONG KONG LKS Faculty of medicine | School of Nursing", typeOfString: "MBBS", detailsLbl: "              I, undersigned, am a candidate for the Bachelor of Medicine and Bachelor of Surgery (MBBS) programme at the University of Hong Kong and a participant in the Multiple Mini Interview (MMI). I hereby undertake to maintain full confidentiality of all information relative to the content of the stations and interview questions.")
+            //self.presentView(imageName: "appLogo.png", logoWidth: 250, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
+        }
        
     }
     @objc func rotated() {

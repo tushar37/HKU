@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 
 open class APIConstants {
@@ -22,7 +22,12 @@ open class APIConstants {
     //static let BASE_URL = "http://147.8.205.204/api"
     //https://mmi.nursing.hku.hk/api/login
     
-    static let BASE_URL = "https://mmi.nursing.hku.hk/api" // Production
+    
+
+    
+    
+    static let BASE_URL_Nursing = "https://mmi.nursing.hku.hk/api" //https://mmi.nursing.hku.hk/
+    static let BASE_URL_MBBS = "https://mmi.med.hku.hk/api" // Production //https://mmi.med.hku.hk/
    // static let BASE_URL = "http://test.arihantwebconsultancy.com/nursing/public/api"  //test server
     static let APP_VERSION = "1.0"
     static let APP_LOCALE = "en"

@@ -13,7 +13,7 @@
         <array key="GOTHIC.TTF">
             <string>CenturyGothic</string>
         </array>
-        <array key="GOTHICBI.TTF">
+        <array key="gothicb.ttf">
             <string>CenturyGothic-Bold</string>
         </array>
     </customFonts>
@@ -23,6 +23,7 @@
                 <outlet property="addSignatureBtn" destination="BF3-qy-GAe" id="WeK-25-RrN"/>
                 <outlet property="btnCameraOREdit" destination="csx-VL-b2h" id="VJ2-tX-iIH"/>
                 <outlet property="btnFullScreen" destination="qC2-0G-vjD" id="1rD-5L-JjZ"/>
+                <outlet property="detailsLbl" destination="NJh-GN-ay0" id="VYe-vo-SUW"/>
                 <outlet property="drawSignatureInstructionView" destination="86W-v1-sbZ" id="xvk-DN-QwG"/>
                 <outlet property="editSignatureBtn" destination="L57-Ly-gP6" id="ARJ-3D-ji9"/>
                 <outlet property="imgProfilePick" destination="LV8-ke-SCI" id="EKo-zx-I01"/>
@@ -40,6 +41,7 @@
                 <outlet property="signatureView" destination="wvt-vj-Q4h" id="Aw6-vs-p1Y"/>
                 <outlet property="signatureViewWidth" destination="i4L-jN-aIa" id="qv8-8U-9Dr"/>
                 <outlet property="testView" destination="iF1-9v-0hL" id="r34-xM-FXX"/>
+                <outlet property="tittleForSignatureView" destination="RtJ-Ui-dNL" id="ryX-2d-N6x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewBox" destination="LYD-gr-bIv" id="ntV-xs-KhO"/>
                 <outlet property="viewColor" destination="LWL-Rk-1wu" id="AtT-uU-heN"/>

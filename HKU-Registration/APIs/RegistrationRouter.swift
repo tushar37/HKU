@@ -47,9 +47,18 @@ enum RegistrationRouter: URLRequestConvertible{
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = try APIConstants.BASE_URL.asURL()
         
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+        let url : URL?
+        
+        if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
+        {
+             url = try APIConstants.BASE_URL_Nursing.asURL()
+        }else{
+            url = try APIConstants.BASE_URL_MBBS.asURL()
+        }
+       
+        
+        var urlRequest = URLRequest(url: (url?.appendingPathComponent(path))!)
         urlRequest.httpMethod = method.rawValue
         
         

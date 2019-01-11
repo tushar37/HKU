@@ -18,6 +18,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="HKU_Registration" customModuleProvider="target">
             <connections>
                 <outlet property="btnLogin" destination="LHG-Na-9Da" id="exQ-AJ-Wm5"/>
+                <outlet property="dropDownBtn" destination="y30-qb-a6m" id="qbE-SS-WdG"/>
+                <outlet property="logoImgHeight" destination="wAf-ft-blc" id="1LF-IT-Ub1"/>
+                <outlet property="logoImgView" destination="bK1-Kn-dBy" id="3vr-tY-sbC"/>
+                <outlet property="logoImgWidth" destination="8eU-j5-UKX" id="PvR-Fg-rO6"/>
+                <outlet property="tittleLbl" destination="7dv-Q5-TFh" id="743-0B-gah"/>
                 <outlet property="txtPassword" destination="n7w-Zi-DCx" id="jh0-he-7gD"/>
                 <outlet property="txtUserName" destination="JKt-mC-XP6" id="bYY-zM-h8q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -50,15 +55,28 @@
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-qb-a6m">
+                                    <rect key="frame" x="277" y="296" width="30" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="3em-xX-CXB"/>
+                                        <constraint firstAttribute="width" constant="30" id="Od3-RK-MNW"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="dropdown-1"/>
+                                    <connections>
+                                        <action selector="dropDownBtnClicked:" destination="-1" eventType="touchUpInside" id="XOj-ng-a8H"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="y30-qb-a6m" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="DIr-Cc-dCl"/>
                                 <constraint firstAttribute="trailing" secondItem="7dv-Q5-TFh" secondAttribute="trailing" constant="10" id="Ewr-hk-ekq"/>
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="top" secondItem="1oV-xA-So3" secondAttribute="top" constant="24" id="JrB-7S-dQ9"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="leading" secondItem="1oV-xA-So3" secondAttribute="leading" constant="10" id="Q3N-fn-rFK"/>
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="VQ9-SP-mk3"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="qf1-Xv-mxF"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="top" secondItem="bK1-Kn-dBy" secondAttribute="bottom" constant="29" id="tDr-25-Aha"/>
+                                <constraint firstItem="y30-qb-a6m" firstAttribute="top" secondItem="7dv-Q5-TFh" secondAttribute="bottom" constant="26" id="v39-Bm-x8l"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K9-h3-0Y0">
@@ -170,5 +188,6 @@
     </objects>
     <resources>
         <image name="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" width="548.4000244140625" height="92.639999389648438"/>
+        <image name="dropdown-1" width="491.51998901367188" height="303.3599853515625"/>
     </resources>
 </document>

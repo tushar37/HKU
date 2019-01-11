@@ -39,6 +39,7 @@
 		187C46D621ABDDE700F86FF2 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C46D521ABDDE600F86FF2 /* YPDrawSignatureView.swift */; };
 		3EFA301FC90C7C5BF3CCC5BA /* Pods_HKU_RegistrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95ADA426C13A1816F29F909F /* Pods_HKU_RegistrationUITests.framework */; };
 		71B77C3A4B59C0939B0D1686 /* Pods_HKU_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BCC6250B1D4D730927BC2B /* Pods_HKU_Registration.framework */; };
+		7887425121E8A08E00256B27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887425021E8A08D00256B27 /* BaseViewController.swift */; };
 		CFF05FFCA3E25CE3D8892B43 /* Pods_HKU_RegistrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41813D5D5D5493097C8D01D2 /* Pods_HKU_RegistrationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		1B1A1D9BC25B7CA533D51DE2 /* Pods-HKU-Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-Registration/Pods-HKU-Registration.release.xcconfig"; sourceTree = "<group>"; };
 		41813D5D5D5493097C8D01D2 /* Pods_HKU_RegistrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKU_RegistrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C15E10846C43FA41E9BD400 /* Pods-HKU-RegistrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-RegistrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-RegistrationUITests/Pods-HKU-RegistrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7887425021E8A08D00256B27 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		95ADA426C13A1816F29F909F /* Pods_HKU_RegistrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKU_RegistrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F339DB04C2B4C65FD7CEA3 /* Pods-HKU-RegistrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-RegistrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-RegistrationTests/Pods-HKU-RegistrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4F9A0DB07E220AB633E783F /* Pods-HKU-Registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKU-Registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKU-Registration/Pods-HKU-Registration.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				0377BF8F2095DB38008D6A03 /* StudentDetailsView */,
 				03B7BA842094DF6E00A8B730 /* ScannerView */,
 				03B7BA7F2094BE0F00A8B730 /* LoginView */,
+				7887425021E8A08D00256B27 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				037C3975209780C800E44B25 /* DetailWrapper.swift in Sources */,
 				187C46D621ABDDE700F86FF2 /* YPDrawSignatureView.swift in Sources */,
 				037C396320976A4B00E44B25 /* EVModelModified.swift in Sources */,
+				7887425121E8A08E00256B27 /* BaseViewController.swift in Sources */,
 				037C396920976E0C00E44B25 /* SSError.swift in Sources */,
 				037C396F20977D5C00E44B25 /* AppManager.swift in Sources */,
 				037C396D20977D4B00E44B25 /* Utility.swift in Sources */,
