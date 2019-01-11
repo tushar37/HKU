@@ -12,12 +12,22 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
 
     @IBOutlet weak var lblEventName: UILabel!
     @IBOutlet weak var txtEnterCode: UITextField!
+    @IBOutlet weak var logoImg: UIImageView!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var LogoImgWidth: NSLayoutConstraint!
+    @IBOutlet weak var LogoImgHeight: NSLayoutConstraint!
     
     var objUser : User?
     var strQRCode : String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.standard.string(forKey: "selected") == "MBBS"{
+            self.titleLbl.text = "Li Ka Shing Faculty of Medicine"
+            self.logoImg.image = UIImage(named: "appLogo")
+            self.LogoImgWidth.constant = 250
+            self.LogoImgHeight.constant = 180
+        }
         self.setData()
     }
     
@@ -35,6 +45,7 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
                                       handler: {(alert: UIAlertAction!) in
                                         AppManager.saveUserData(objUser: User())
                                         appDel.initControllerBasedOnSession()
+                                        UserDefaults.standard.set(nil, forKey: "selected")
         }))
         alert.addAction(UIAlertAction(title: "Cancel",
                                       style: UIAlertActionStyle.default,

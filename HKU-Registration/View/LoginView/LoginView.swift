@@ -13,7 +13,12 @@ class LoginView: UIViewController {
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnLogin: RNLoadingButton!
-
+    @IBOutlet weak var dropDownBtn: UIButton!
+    @IBOutlet weak var Title_Label: UILabel!
+    @IBOutlet weak var LogoImage: UIImageView!
+    @IBOutlet weak var LogoImgWidth: NSLayoutConstraint!
+    @IBOutlet weak var LogoImgHeight: NSLayoutConstraint!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.btnLogin.activityIndicatorViewStyle = .white
@@ -64,4 +69,53 @@ class LoginView: UIViewController {
             self.btnLogin.isLoading=false
         }
     }
+    func chooseFaculty_Api(Heading: String, imgName: String, selectedVal: String, WidthCons: CGFloat, HeightCons: CGFloat){
+        self.Title_Label.text = Heading
+        self.LogoImage.image = UIImage(named: imgName)
+        self.LogoImgWidth.constant = WidthCons
+        self.LogoImgHeight.constant = HeightCons
+        UserDefaults.standard.set(selectedVal, forKey: "selected")
+    }
+    @IBAction func choose_Faculty(_ sender: Any) {
+    let optionMenu = UIAlertController(title: "Choose Your Option", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+            
+            let option1 = UIAlertAction(title: "Nursing", style: .default, handler: {
+                
+                (alert: UIAlertAction!) -> Void in
+                
+      self.chooseFaculty_Api(Heading: "LKS Faculty of medicine | School of Nursing", imgName: "HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1)", selectedVal: "Nursing", WidthCons: 450, HeightCons: 180)
+            })
+            
+            let option2 = UIAlertAction(title: "MBBS ", style: .default, handler: {
+                
+                (alert: UIAlertAction!) -> Void in
+                
+        self.chooseFaculty_Api(Heading: "Li Ka Shing Faculty of Medicine", imgName: "appLogo", selectedVal: "MBBS", WidthCons: 250, HeightCons: 180)
+            })
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+                (alert: UIAlertAction!) -> Void in
+                print("Cancelled")
+            })
+            
+            optionMenu.addAction(option1)
+            optionMenu.addAction(option2)
+            optionMenu.addAction(cancelAction)
+            
+            
+            if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad )
+            {
+                if let currentPopoverpresentioncontroller = optionMenu.popoverPresentationController{
+                    currentPopoverpresentioncontroller.sourceView = dropDownBtn
+                    currentPopoverpresentioncontroller.sourceRect = dropDownBtn.bounds;
+                    currentPopoverpresentioncontroller.permittedArrowDirections = UIPopoverArrowDirection.up;
+                    self.present(optionMenu, animated: true, completion: nil)
+                }
+            }else{
+                self.present(optionMenu, animated: true, completion: nil)
+            }
+            
+        
+    }
+    
 }

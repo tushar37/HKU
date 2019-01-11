@@ -20,7 +20,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerView" customModule="HKU_Registration" customModuleProvider="target">
             <connections>
+                <outlet property="LogoImgHeight" destination="uge-ak-zKH" id="den-ms-p6E"/>
+                <outlet property="LogoImgWidth" destination="f3r-Pg-ub3" id="HLe-SW-zfa"/>
                 <outlet property="lblEventName" destination="QtX-9O-1aG" id="d0L-LL-07o"/>
+                <outlet property="logoImg" destination="fh3-hS-tKW" id="5t2-t4-aj9"/>
+                <outlet property="titleLbl" destination="fir-81-0dT" id="1dz-Kg-T9Y"/>
                 <outlet property="txtEnterCode" destination="yji-VL-Bhn" id="Rte-nA-HLM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

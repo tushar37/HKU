@@ -17,7 +17,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="HKU_Registration" customModuleProvider="target">
             <connections>
+                <outlet property="LogoImage" destination="bK1-Kn-dBy" id="OCt-TT-mba"/>
+                <outlet property="LogoImgHeight" destination="wAf-ft-blc" id="Sim-Ov-qKs"/>
+                <outlet property="LogoImgWidth" destination="8eU-j5-UKX" id="2DF-cC-a4Q"/>
+                <outlet property="Title_Label" destination="7dv-Q5-TFh" id="6Tr-Jl-sjP"/>
                 <outlet property="btnLogin" destination="LHG-Na-9Da" id="exQ-AJ-Wm5"/>
+                <outlet property="dropDownBtn" destination="bXb-ia-eeb" id="8r4-7T-ZA3"/>
                 <outlet property="txtPassword" destination="n7w-Zi-DCx" id="jh0-he-7gD"/>
                 <outlet property="txtUserName" destination="JKt-mC-XP6" id="bYY-zM-h8q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,7 +37,7 @@
                     <rect key="frame" x="84" y="180" width="600" height="664"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-xA-So3">
-                            <rect key="frame" x="8" y="8" width="584" height="320"/>
+                            <rect key="frame" x="8" y="8" width="600" height="320"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
                                     <rect key="frame" x="67" y="24" width="450" height="180"/>
@@ -42,7 +47,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LKS Faculty of medicine | School of Nursing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dv-Q5-TFh">
-                                    <rect key="frame" x="10" y="233" width="564" height="37"/>
+                                    <rect key="frame" x="10" y="233" width="558" height="37"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="37" id="8ey-ao-PkQ"/>
                                     </constraints>
@@ -50,14 +55,26 @@
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXb-ia-eeb">
+                                    <rect key="frame" x="569" y="241" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="0Fd-0h-f0t"/>
+                                        <constraint firstAttribute="height" constant="30" id="Pk5-Wu-dlx"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="editPhoto"/>
+                                    <connections>
+                                        <action selector="choose_Faculty:" destination="-1" eventType="touchUpInside" id="Pxj-Ge-yvF"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="7dv-Q5-TFh" secondAttribute="trailing" constant="10" id="Ewr-hk-ekq"/>
+                                <constraint firstItem="bXb-ia-eeb" firstAttribute="leading" secondItem="7dv-Q5-TFh" secondAttribute="trailing" constant="1" id="5er-5r-XGd"/>
+                                <constraint firstItem="bXb-ia-eeb" firstAttribute="top" secondItem="7dv-Q5-TFh" secondAttribute="top" constant="8" id="INZ-y7-k9x"/>
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="top" secondItem="1oV-xA-So3" secondAttribute="top" constant="24" id="JrB-7S-dQ9"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="leading" secondItem="1oV-xA-So3" secondAttribute="leading" constant="10" id="Q3N-fn-rFK"/>
-                                <constraint firstItem="bK1-Kn-dBy" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="VQ9-SP-mk3"/>
-                                <constraint firstItem="7dv-Q5-TFh" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="qf1-Xv-mxF"/>
+                                <constraint firstItem="bK1-Kn-dBy" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" constant="-8" id="VQ9-SP-mk3"/>
+                                <constraint firstAttribute="trailing" secondItem="bXb-ia-eeb" secondAttribute="trailing" constant="1" id="nF1-Bn-Qsg"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="top" secondItem="bK1-Kn-dBy" secondAttribute="bottom" constant="29" id="tDr-25-Aha"/>
                             </constraints>
                         </view>
@@ -146,7 +163,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="1oV-xA-So3" secondAttribute="trailing" constant="8" id="Opd-ca-ilz"/>
+                        <constraint firstAttribute="trailing" secondItem="1oV-xA-So3" secondAttribute="trailing" constant="-8" id="Opd-ca-ilz"/>
                         <constraint firstItem="1oV-xA-So3" firstAttribute="top" secondItem="ZXE-jn-zSV" secondAttribute="top" constant="8" id="Ssj-Dx-rBV"/>
                         <constraint firstItem="0K9-h3-0Y0" firstAttribute="top" secondItem="1oV-xA-So3" secondAttribute="bottom" constant="8" id="Wo6-dk-7PM"/>
                         <constraint firstAttribute="trailing" secondItem="0K9-h3-0Y0" secondAttribute="trailing" constant="8" id="YA0-oo-SIc"/>
@@ -165,10 +182,11 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="294" y="227"/>
+            <point key="canvasLocation" x="293.75" y="226.75781249999997"/>
         </view>
     </objects>
     <resources>
         <image name="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" width="548.4000244140625" height="92.639999389648438"/>
+        <image name="editPhoto" width="90" height="90"/>
     </resources>
 </document>

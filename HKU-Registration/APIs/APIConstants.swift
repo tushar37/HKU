@@ -14,7 +14,7 @@ open class APIConstants {
     
     // MARK: List of Constants
    //  static let BASE_URL = "http://demo.arihantwebconsultancy.com/mmi/public/api"
-  //  static let BASE_URL = "https://mmi.med.hku.hk/api"    //New 30 May  //Reused on 03 Jully 2018
+    static let BASE_URL_MED = "https://mmi.med.hku.hk/api"    //New 30 May  //Reused on 03 Jully 2018
     
   //  static let BASE_URL = "http://test.arihantwebconsultancy.com/mmi/public/admin/dashboard" // given by Sandeep Pande 23 Nov 18
     
