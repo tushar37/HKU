@@ -56,10 +56,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-qb-a6m">
-                                    <rect key="frame" x="277" y="296" width="30" height="16"/>
+                                    <rect key="frame" x="276" y="290" width="32" height="18"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="16" id="3em-xX-CXB"/>
-                                        <constraint firstAttribute="width" constant="30" id="Od3-RK-MNW"/>
+                                        <constraint firstAttribute="height" constant="18" id="3em-xX-CXB"/>
+                                        <constraint firstAttribute="width" constant="32" id="Od3-RK-MNW"/>
                                     </constraints>
                                     <state key="normal" backgroundImage="dropdown-1"/>
                                     <connections>
@@ -76,7 +76,7 @@
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="VQ9-SP-mk3"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="qf1-Xv-mxF"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="top" secondItem="bK1-Kn-dBy" secondAttribute="bottom" constant="29" id="tDr-25-Aha"/>
-                                <constraint firstItem="y30-qb-a6m" firstAttribute="top" secondItem="7dv-Q5-TFh" secondAttribute="bottom" constant="26" id="v39-Bm-x8l"/>
+                                <constraint firstItem="y30-qb-a6m" firstAttribute="top" secondItem="7dv-Q5-TFh" secondAttribute="bottom" constant="20" id="v39-Bm-x8l"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K9-h3-0Y0">
