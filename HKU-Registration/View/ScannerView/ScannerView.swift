@@ -34,7 +34,7 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
         self.setData()
         if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
         {
-            self.presentView(imageName: "HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1).png", logoWidth: 450, logoHeight: 120, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
+            self.presentView(imageName: "logo.png", logoWidth: 450, logoHeight: 120, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
         }else{
             self.presentView(imageName: "appLogo.png", logoWidth: 200, logoHeight: 180, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
         }

@@ -43,9 +43,9 @@ class LoginView: UIViewController {
         let option1 = UIAlertAction(title: "School Of Nursing", style: .default, handler: {
             
             (alert: UIAlertAction!) -> Void in
-            self.presentView(imageName: "HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1).png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
+            self.presentView(imageName: "logo.png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
         })
-        
+        //HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1)
         let option2 = UIAlertAction(title: "Faculty of Medicine", style: .default, handler: {
             
             (alert: UIAlertAction!) -> Void in

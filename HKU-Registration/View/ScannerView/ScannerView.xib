@@ -13,7 +13,7 @@
         <array key="GOTHIC.TTF">
             <string>CenturyGothic</string>
         </array>
-        <array key="gothicb.ttf">
+        <array key="GOTHICBI.TTF">
             <string>CenturyGothic-Bold</string>
         </array>
     </customFonts>
@@ -53,7 +53,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btB-wt-pOn">
                             <rect key="frame" x="8" y="8" width="584" height="320"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-hS-tKW">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-hS-tKW">
                                     <rect key="frame" x="67" y="75" width="450" height="120"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="450" id="f3r-Pg-ub3"/>
@@ -235,7 +235,7 @@
         </view>
     </objects>
     <resources>
-        <image name="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" width="548.4000244140625" height="92.639999389648438"/>
+        <image name="logo" width="346" height="54"/>
         <image name="logout" width="135" height="135"/>
         <image name="qrscanner" width="135" height="135"/>
         <image name="slash" width="135" height="135"/>

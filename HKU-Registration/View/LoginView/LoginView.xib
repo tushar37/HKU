@@ -39,7 +39,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-xA-So3">
                             <rect key="frame" x="8" y="8" width="584" height="320"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
                                     <rect key="frame" x="67" y="24" width="450" height="180"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="450" id="8eU-j5-UKX"/>
@@ -187,7 +187,7 @@
         </view>
     </objects>
     <resources>
-        <image name="HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black &amp; Silver... (1)" width="548.4000244140625" height="92.639999389648438"/>
         <image name="dropdown-1" width="491.51998901367188" height="303.3599853515625"/>
+        <image name="logo" width="346" height="54"/>
     </resources>
 </document>
