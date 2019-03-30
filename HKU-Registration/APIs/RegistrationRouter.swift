@@ -18,6 +18,7 @@ enum RegistrationRouter: URLRequestConvertible{
     case login(parameters:Parameters)
     case scanQRCode(parameters:Parameters)
     case uploadUserImage(parameters:Parameters)
+    case getNda()
     
     var method: HTTPMethod {
         switch self {
@@ -30,6 +31,8 @@ enum RegistrationRouter: URLRequestConvertible{
         case .uploadUserImage:
             return .post
 
+        case .getNda:
+            return .get
         }
     }
     
@@ -43,6 +46,8 @@ enum RegistrationRouter: URLRequestConvertible{
             return "/\(baseComponent)scanQRCode"
         case .uploadUserImage(_):
             return "/\(baseComponent)register" //registertest
+        case .getNda:
+            return "/\(baseComponent)student_nda" //nda
         }
     }
     

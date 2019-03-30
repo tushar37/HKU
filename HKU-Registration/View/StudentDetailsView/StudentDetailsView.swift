@@ -11,10 +11,11 @@ import MBProgressHUD
 import SDWebImage
 import MWPhotoBrowser
 
-class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,MWPhotoBrowserDelegate,YPSignatureDelegate {
+class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,MWPhotoBrowserDelegate,YPSignatureDelegate,UIWebViewDelegate {
     func didStart(_ view: YPDrawSignatureView) {
         print("start drawing")
     }
+    @IBOutlet weak var webView: UIWebView!
     
     func didFinish(_ view: YPDrawSignatureView) {
         print("finish drawing")
@@ -50,17 +51,17 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     @IBOutlet weak var viewColor: UIView!
 
     // Signature View
-    @IBOutlet weak var tittleForSignatureView: UILabel!
-    
-    @IBOutlet weak var detailsLbl: UITextView!
+//    @IBOutlet weak var tittleForSignatureView: UILabel!
+//
+//    @IBOutlet weak var detailsLbl: UITextView!
     
     let nsud = UserDefaults.standard
     
     func presentView(tittleForSignatureView:String,typeOfString:String,detailsLbl:String)
     {
         self.nsud.set(typeOfString, forKey: "SelectedOption")
-        self.detailsLbl.text = detailsLbl
-        self.tittleForSignatureView.text = tittleForSignatureView
+       // self.detailsLbl.text = detailsLbl
+       // self.tittleForSignatureView.text = tittleForSignatureView
     }
     
     func signatureButtonView(btn:UIButton,color:UIColor,alpha:CGFloat)
@@ -328,6 +329,18 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     
     func addSinatureMethod()
     {
+        MBProgressHUD.showAdded(to: self.webView, animated: true)
+         RegisterationAPI().NDAText(success: { (objUserResult) in
+                   if objUserResult.error == 1 { //Error
+                      appDel.showAlertWith(view: self, title: objUserResult.message!)
+                   }
+                 else{     //Success
+                    self.webView.loadHTMLString((objUserResult as AnyObject).value(forKey: "student_nda") as! String, baseURL: nil)
+                    
+                }
+                })  { (error) in
+                    appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
+         }
         blackBackgroundView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
         blackBackgroundView.backgroundColor = UIColor.black
         self.view.addSubview(blackBackgroundView)
@@ -343,8 +356,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         signatureArea.layer.borderColor = UIColor.gray.cgColor
         signatureView.center = self.view.center
         signatureView.layer.cornerRadius = 10
-        
-    }
+     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         print(UIDevice.current.orientation.isLandscape)
@@ -358,6 +370,10 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         }else{
             addSinatureMethod()
          }
+        
+    }
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+       MBProgressHUD.hideAllHUDs(for: self.webView, animated: true)
         
     }
     @IBAction func doneClicked(_ sender: UIButton) {

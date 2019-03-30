@@ -23,7 +23,6 @@
                 <outlet property="addSignatureBtn" destination="BF3-qy-GAe" id="WeK-25-RrN"/>
                 <outlet property="btnCameraOREdit" destination="csx-VL-b2h" id="VJ2-tX-iIH"/>
                 <outlet property="btnFullScreen" destination="qC2-0G-vjD" id="1rD-5L-JjZ"/>
-                <outlet property="detailsLbl" destination="NJh-GN-ay0" id="VYe-vo-SUW"/>
                 <outlet property="drawSignatureInstructionView" destination="86W-v1-sbZ" id="xvk-DN-QwG"/>
                 <outlet property="editSignatureBtn" destination="L57-Ly-gP6" id="ARJ-3D-ji9"/>
                 <outlet property="imgProfilePick" destination="LV8-ke-SCI" id="EKo-zx-I01"/>
@@ -41,10 +40,10 @@
                 <outlet property="signatureView" destination="wvt-vj-Q4h" id="Aw6-vs-p1Y"/>
                 <outlet property="signatureViewWidth" destination="i4L-jN-aIa" id="qv8-8U-9Dr"/>
                 <outlet property="testView" destination="iF1-9v-0hL" id="r34-xM-FXX"/>
-                <outlet property="tittleForSignatureView" destination="RtJ-Ui-dNL" id="ryX-2d-N6x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewBox" destination="LYD-gr-bIv" id="ntV-xs-KhO"/>
                 <outlet property="viewColor" destination="LWL-Rk-1wu" id="AtT-uU-heN"/>
+                <outlet property="webView" destination="iUe-eQ-TH0" id="g8G-ad-v4u"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -414,17 +413,17 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iF1-9v-0hL">
-                    <rect key="frame" x="0.0" y="35.5" width="968" height="600"/>
+                    <rect key="frame" x="0.0" y="10.5" width="968" height="650"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-EG-Uj4" customClass="YPDrawSignatureView" customModule="HKU_Registration" customModuleProvider="target">
-                            <rect key="frame" x="20" y="292" width="928" height="188"/>
+                            <rect key="frame" x="20" y="342" width="928" height="188"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="188" id="ars-bs-Ljk"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qX4-na-28y">
-                            <rect key="frame" x="80" y="510" width="200" height="60"/>
+                            <rect key="frame" x="80" y="560" width="200" height="60"/>
                             <color key="backgroundColor" red="0.084784246980000005" green="0.39364969729999999" blue="0.85927009580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="4Du-Tg-qyc"/>
@@ -443,7 +442,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvL-kX-NDz">
-                            <rect key="frame" x="688" y="510" width="200" height="60"/>
+                            <rect key="frame" x="688" y="560" width="200" height="60"/>
                             <color key="backgroundColor" red="0.084784246980000005" green="0.39364969729999999" blue="0.85927009580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                             <state key="normal" title="Done">
@@ -458,69 +457,33 @@
                                 <action selector="doneClicked:" destination="-1" eventType="touchUpInside" id="GX5-jn-gR1"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtJ-Ui-dNL">
-                            <rect key="frame" x="273.5" y="30" width="421.5" height="46"/>
-                            <attributedString key="attributedText">
-                                <fragment content="THE UNIVERSITY OF HONG KONG LKS Faculty of medicine | School of Nursing">
-                                    <attributes>
-                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="20" name="Helvetica-Bold"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOk-xh-MbC">
-                            <rect key="frame" x="321" y="101" width="326" height="23"/>
-                            <attributedString key="attributedText">
-                                <fragment content="Interview Non-disclosure Declaration">
-                                    <attributes>
-                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="20" name="Helvetica"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        <integer key="NSUnderline" value="1"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJh-GN-ay0">
-                            <rect key="frame" x="50" y="149" width="868" height="128"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <attributedString key="attributedText">
-                                <fragment>
-                                    <string key="content">              I, undersigned, am a candidate for the Bachelor of Nursing (FT) programme at the University of Hong Kong and a participant in the Multiple Mini Interview (MMI). I hereby undertake to maintain full confidentiality of all information relative to the content of the stations and interview questions.</string>
-                                    <attributes>
-                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <font key="NSFont" size="18" name="Helvetica"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUe-eQ-TH0">
+                            <rect key="frame" x="20" y="19.5" width="928" height="317.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="277" id="W0U-FT-BJs"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="ZDj-bD-oGU"/>
+                            </connections>
+                        </webView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="bOk-xh-MbC" firstAttribute="centerX" secondItem="FVT-Rs-c6i" secondAttribute="centerX" id="1pg-ef-qDH"/>
-                        <constraint firstAttribute="height" constant="600" id="6rM-4o-Awx"/>
-                        <constraint firstItem="RtJ-Ui-dNL" firstAttribute="top" secondItem="FVT-Rs-c6i" secondAttribute="top" constant="30" id="8Hn-px-R0u"/>
-                        <constraint firstItem="NJh-GN-ay0" firstAttribute="leading" secondItem="FVT-Rs-c6i" secondAttribute="leading" constant="50" id="FEw-N1-1gH"/>
-                        <constraint firstItem="RtJ-Ui-dNL" firstAttribute="centerX" secondItem="FVT-Rs-c6i" secondAttribute="centerX" id="GYS-Yp-Lf3"/>
+                        <constraint firstAttribute="height" constant="650" id="6rM-4o-Awx"/>
+                        <constraint firstItem="iUe-eQ-TH0" firstAttribute="top" secondItem="FVT-Rs-c6i" secondAttribute="top" constant="10" id="Akm-R6-wMz"/>
+                        <constraint firstItem="iUe-eQ-TH0" firstAttribute="leading" secondItem="gBH-EG-Uj4" secondAttribute="leading" id="DTl-5n-cVS"/>
                         <constraint firstItem="qX4-na-28y" firstAttribute="centerY" secondItem="yvL-kX-NDz" secondAttribute="centerY" id="Kra-6p-5Qs"/>
-                        <constraint firstItem="bOk-xh-MbC" firstAttribute="top" secondItem="RtJ-Ui-dNL" secondAttribute="bottom" constant="25" id="LG0-RB-PdK"/>
                         <constraint firstItem="yvL-kX-NDz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="qX4-na-28y" secondAttribute="trailing" constant="408" id="Ryv-gF-krP"/>
+                        <constraint firstItem="iUe-eQ-TH0" firstAttribute="trailing" secondItem="gBH-EG-Uj4" secondAttribute="trailing" id="TXc-Y8-WH7"/>
                         <constraint firstItem="gBH-EG-Uj4" firstAttribute="leading" secondItem="FVT-Rs-c6i" secondAttribute="leading" constant="20" id="Xge-Ao-TBe"/>
-                        <constraint firstItem="NJh-GN-ay0" firstAttribute="top" secondItem="bOk-xh-MbC" secondAttribute="bottom" constant="25" id="a6K-Oa-LRL"/>
                         <constraint firstItem="FVT-Rs-c6i" firstAttribute="bottom" secondItem="qX4-na-28y" secondAttribute="bottom" constant="30" id="dJU-Pn-bL0"/>
-                        <constraint firstItem="FVT-Rs-c6i" firstAttribute="trailing" secondItem="NJh-GN-ay0" secondAttribute="trailing" constant="50" id="eIA-Jh-F0B"/>
                         <constraint firstItem="qX4-na-28y" firstAttribute="top" secondItem="gBH-EG-Uj4" secondAttribute="bottom" constant="30" id="f57-9G-QSc"/>
                         <constraint firstAttribute="width" constant="968" id="i4L-jN-aIa"/>
                         <constraint firstItem="FVT-Rs-c6i" firstAttribute="trailing" secondItem="yvL-kX-NDz" secondAttribute="trailing" constant="80" id="l2d-0M-66S"/>
                         <constraint firstItem="qX4-na-28y" firstAttribute="leading" secondItem="FVT-Rs-c6i" secondAttribute="leading" constant="80" id="mZT-TK-kVK"/>
                         <constraint firstItem="qX4-na-28y" firstAttribute="width" secondItem="yvL-kX-NDz" secondAttribute="width" id="sMz-ju-Wz5"/>
-                        <constraint firstItem="gBH-EG-Uj4" firstAttribute="top" secondItem="NJh-GN-ay0" secondAttribute="bottom" constant="15" id="tlW-mJ-CI0"/>
+                        <constraint firstItem="gBH-EG-Uj4" firstAttribute="top" secondItem="iUe-eQ-TH0" secondAttribute="bottom" constant="5" id="sjm-FM-LJw"/>
                         <constraint firstItem="FVT-Rs-c6i" firstAttribute="trailing" secondItem="gBH-EG-Uj4" secondAttribute="trailing" constant="20" id="vQ7-sN-KgW"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="FVT-Rs-c6i"/>

@@ -22,3 +22,10 @@ class User: EVModelModified {
     var error       :Int = 0
 
 }
+
+class NDA: EVModelModified {
+    
+    var error    :Int = 0
+    var student_nda    :String = ""
+
+}

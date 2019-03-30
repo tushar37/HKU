@@ -15,6 +15,37 @@ open class RegisterationAPI {
         return "\(Date().timeIntervalSince1970 * 1000)"
     }
     
+    func NDAText(success: @escaping (_ objUser : NDA) -> Void,
+               failure: @escaping (Error?)-> Void)
+    {
+       
+        let session = Alamofire.SessionManager.default
+        session.session.configuration.urlCache = nil
+        
+        session.request(RegistrationRouter.getNda()).validate().responseJSON (completionHandler:  { data in
+            if(SSError.isErrorReponse(operation: data.response)){
+                let error = NSError.init(domain: "Error", code: 422, userInfo: ["message":data.error.debugDescription])//"Please enter data in correct format"
+                failure(error)
+            }else{
+                let dictResponse : NSDictionary? = data.result.value as? NSDictionary
+                let status : String? = dictResponse?["status"] as? String
+                if(status  == "error"){
+                    
+                }else{
+                    let dictResponse : NSDictionary? = data.result.value as? NSDictionary
+                    if dictResponse?.value(forKey: "user") == nil {
+                        let objParsed = NDA(dictionary:(dictResponse)!)
+                        success (objParsed)
+                    }else{
+                        let user :NSDictionary  = dictResponse!.value(forKey: "user") as! NSDictionary
+                        let objParsed = NDA(dictionary:(user))
+                        success (objParsed)
+                    }
+                }
+            }
+        })
+    }
+    
     func login(objUser: User,
                success: @escaping (_ objUser : User) -> Void,
                failure: @escaping (Error?)-> Void)
