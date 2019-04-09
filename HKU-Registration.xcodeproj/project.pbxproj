@@ -739,7 +739,7 @@
 				INFOPLIST_FILE = "HKU-Registration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MYLO.mindyourlovedones;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quagnitia.AQI-com.quagnitia.AQI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7a4e63b8-4234-48ac-9f90-3b32ad59642c";
 				PROVISIONING_PROFILE_SPECIFIER = MYLO_PP_Dev;
@@ -759,7 +759,7 @@
 				INFOPLIST_FILE = "HKU-Registration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MYLO.mindyourlovedones;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quagnitia.AQI-com.quagnitia.AQI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7a4e63b8-4234-48ac-9f90-3b32ad59642c";
 				PROVISIONING_PROFILE_SPECIFIER = MYLO_PP_Dev;

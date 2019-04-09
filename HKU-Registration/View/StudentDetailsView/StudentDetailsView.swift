@@ -150,6 +150,22 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
 //    override func viewWillAppear(_ animated: Bool) {
 //        checkProfileImage()
 //    }
+    func base64Convert(base64String: String?) -> UIImage{
+        var image = #imageLiteral(resourceName: "signature")
+        if (base64String?.isEmpty)! {
+            return #imageLiteral(resourceName: "signature")
+        }else {
+            //https://freakycoder.com/ios-notes-25-how-to-convert-base64string-to-uiimage-cacec2117603
+            if let baseString = base64String {
+                let dataDecoded:Data = NSData(base64Encoded: baseString, options: NSData.Base64DecodingOptions(rawValue: 0))! as Data
+                if let img = UIImage(data: dataDecoded) {
+                    image = img
+                }
+              }
+            
+            return image
+        }
+    }
     func setData(){
         self.lblFullName.text = (self.objDetail?.student?.first_name)! + " " + (self.objDetail?.student?.last_name)!
         self.lblCode.text =  self.objDetail?.student?.candidate_no
@@ -178,7 +194,8 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         
         DispatchQueue.main.async {
             self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.pic)!), placeholderImage: UIImage(named: "profileImage.png"))
-            self.signatureImg.sd_setImage(with: URL(string: (self.objDetail?.student?.declaration)!), placeholderImage: UIImage(named: "signature.png"))
+            self.signatureImg.image = self.base64Convert(base64String: self.objDetail?.student?.declaration)
+                //.sd_setImage(with: URL(string: (self.objDetail?.student?.declaration)!), placeholderImage: UIImage(named: "signature.png"))
         }
         self.checkProfileImage()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
