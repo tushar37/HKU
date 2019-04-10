@@ -39,15 +39,15 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-xA-So3">
                             <rect key="frame" x="8" y="8" width="584" height="320"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
-                                    <rect key="frame" x="67" y="24" width="450" height="180"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NursingImageHKU" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
+                                    <rect key="frame" x="67" y="50" width="450" height="180"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="450" id="8eU-j5-UKX"/>
                                         <constraint firstAttribute="height" constant="180" id="wAf-ft-blc"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LKS Faculty of medicine | School of Nursing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dv-Q5-TFh">
-                                    <rect key="frame" x="10" y="233" width="564" height="37"/>
+                                    <rect key="frame" x="10" y="230" width="564" height="37"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="37" id="8ey-ao-PkQ"/>
                                     </constraints>
@@ -56,7 +56,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-qb-a6m">
-                                    <rect key="frame" x="276" y="290" width="32" height="18"/>
+                                    <rect key="frame" x="276" y="287" width="32" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="3em-xX-CXB"/>
                                         <constraint firstAttribute="width" constant="32" id="Od3-RK-MNW"/>
@@ -71,11 +71,11 @@
                             <constraints>
                                 <constraint firstItem="y30-qb-a6m" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="DIr-Cc-dCl"/>
                                 <constraint firstAttribute="trailing" secondItem="7dv-Q5-TFh" secondAttribute="trailing" constant="10" id="Ewr-hk-ekq"/>
-                                <constraint firstItem="bK1-Kn-dBy" firstAttribute="top" secondItem="1oV-xA-So3" secondAttribute="top" constant="24" id="JrB-7S-dQ9"/>
+                                <constraint firstItem="bK1-Kn-dBy" firstAttribute="top" secondItem="1oV-xA-So3" secondAttribute="top" constant="50" id="JrB-7S-dQ9"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="leading" secondItem="1oV-xA-So3" secondAttribute="leading" constant="10" id="Q3N-fn-rFK"/>
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="VQ9-SP-mk3"/>
                                 <constraint firstItem="7dv-Q5-TFh" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="qf1-Xv-mxF"/>
-                                <constraint firstItem="7dv-Q5-TFh" firstAttribute="top" secondItem="bK1-Kn-dBy" secondAttribute="bottom" constant="29" id="tDr-25-Aha"/>
+                                <constraint firstItem="7dv-Q5-TFh" firstAttribute="top" secondItem="bK1-Kn-dBy" secondAttribute="bottom" id="tDr-25-Aha"/>
                                 <constraint firstItem="y30-qb-a6m" firstAttribute="top" secondItem="7dv-Q5-TFh" secondAttribute="bottom" constant="20" id="v39-Bm-x8l"/>
                             </constraints>
                         </view>
@@ -187,7 +187,7 @@
         </view>
     </objects>
     <resources>
+        <image name="NursingImageHKU" width="548.4000244140625" height="92.639999389648438"/>
         <image name="dropdown-1" width="491.51998901367188" height="303.3599853515625"/>
-        <image name="logo" width="346" height="54"/>
     </resources>
 </document>

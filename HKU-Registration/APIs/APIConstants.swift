@@ -26,13 +26,12 @@ open class APIConstants {
     let base = "http://test.arihantwebconsultancy.com/mmi/public/api/"
     
     
-//    static let BASE_URL_Nursing = "https://mmi.nursing.hku.hk/api" //https://mmi.nursing.hku.hk/
-//    static let BASE_URL_MBBS = "https://mmi.med.hku.hk/api" // Production //https://mmi.med.hku.hk/
+    static let BASE_URL_Nursing = "https://mmi.nursing.hku.hk/api"
+    static let BASE_URL_MBBS = "https://mmi.med.hku.hk/api"
     
-    static let BASE_URL_Nursing = "http://test.arihantwebconsultancy.com/mmi/public/api" //https://mmi.nursing.hku.hk/
-    static let BASE_URL_MBBS = "http://test.arihantwebconsultancy.com/mmi/public/api" // Production //https://mmi.med.hku.hk/
+//    static let BASE_URL_Nursing = "http://test.arihantwebconsultancy.com/mmi/public/api"
+//    static let BASE_URL_MBBS = "http://test.arihantwebconsultancy.com/mmi/public/api"
     
-   // static let BASE_URL = "http://test.arihantwebconsultancy.com/nursing/public/api"  //test server
     static let APP_VERSION = "1.0"
     static let APP_LOCALE = "en"
     static let PLATFORM = "IOS"

@@ -89,7 +89,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
            // self.presentView(imageName: "HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1).png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
         }else{
             self.presentView(tittleForSignatureView: "THE UNIVERSITY OF HONG KONG LKS Faculty of medicine | School of Nursing", typeOfString: "MBBS", detailsLbl: "              I, undersigned, am a candidate for the Bachelor of Medicine and Bachelor of Surgery (MBBS) programme at the University of Hong Kong and a participant in the Multiple Mini Interview (MMI). I hereby undertake to maintain full confidentiality of all information relative to the content of the stations and interview questions.")
-            //self.presentView(imageName: "appLogo.png", logoWidth: 250, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
+            //self.presentView(imageName: "MedicalImageHKU.png", logoWidth: 250, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
         }
        
     }

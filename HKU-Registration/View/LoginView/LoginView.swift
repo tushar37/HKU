@@ -40,24 +40,38 @@ class LoginView: UIViewController {
         
         let optionMenu = UIAlertController(title: "Choose Your Option", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         
-        let option1 = UIAlertAction(title: "School Of Nursing", style: .default, handler: {
+        if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
+        {
+            let option1 = UIAlertAction(title: "School Of Nursing", style: .cancel, handler: {
+                
+                (alert: UIAlertAction!) -> Void in
+                self.presentView(imageName: "NursingImageHKU.png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
+            })
+            optionMenu.addAction(option1)
+                        let option2 = UIAlertAction(title: "Faculty of Medicine", style: .default, handler: {
             
-            (alert: UIAlertAction!) -> Void in
-            self.presentView(imageName: "logo.png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
-        })
-        //HKU_LKS Faculty of Medicine_School of Nursing_Master Logo_Black & Silver... (1)
-        let option2 = UIAlertAction(title: "Faculty of Medicine", style: .default, handler: {
+                            (alert: UIAlertAction!) -> Void in
             
-            (alert: UIAlertAction!) -> Void in
-           
-            self.presentView(imageName: "appLogo.png", logoWidth: 200, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
+                            self.presentView(imageName: "MedicalImageHKU.png", logoWidth: 450, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
             
-        })
-       
-        
-        optionMenu.addAction(option1)
-        optionMenu.addAction(option2)
-       
+                        })
+                        optionMenu.addAction(option2)
+        }else{
+            let option1 = UIAlertAction(title: "School Of Nursing", style: .default, handler: {
+                
+                (alert: UIAlertAction!) -> Void in
+                self.presentView(imageName: "NursingImageHKU.png", logoWidth: 450, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
+            })
+            optionMenu.addAction(option1)
+                        let option2 = UIAlertAction(title: "Faculty of Medicine", style: .cancel, handler: {
+            
+                            (alert: UIAlertAction!) -> Void in
+            
+                            self.presentView(imageName: "MedicalImageHKU.png", logoWidth: 450, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
+            
+                        })
+                        optionMenu.addAction(option2)
+        }
         
         
         if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad )
