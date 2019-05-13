@@ -43,7 +43,7 @@ enum RegistrationRouter: URLRequestConvertible{
             return "/\(baseComponent)login"
        
         case .scanQRCode(_):
-            return "/\(baseComponent)scanQRCode"
+            return "/\(baseComponent)getStudent"
         case .uploadUserImage(_):
             return "/\(baseComponent)register" //registertest
         case .getNda:

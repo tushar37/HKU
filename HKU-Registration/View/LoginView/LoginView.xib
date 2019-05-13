@@ -56,9 +56,9 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-qb-a6m">
-                                    <rect key="frame" x="276" y="287" width="32" height="18"/>
+                                    <rect key="frame" x="276" y="287" width="32" height="0.0"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="18" id="3em-xX-CXB"/>
+                                        <constraint firstAttribute="height" id="3em-xX-CXB"/>
                                         <constraint firstAttribute="width" constant="32" id="Od3-RK-MNW"/>
                                     </constraints>
                                     <state key="normal" backgroundImage="dropdown-1"/>

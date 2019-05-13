@@ -97,10 +97,10 @@ open class RegisterationAPI {
             if let anEncoding = objStudent.qrcode.data(using: .utf8) {
                 jsonObject = try! JSONSerialization.jsonObject(with: anEncoding, options: []) as? [Any]
             }
-            parameters.setValue(jsonObject, forKey: "qrcode")
+            parameters.setValue(jsonObject, forKey: "uid")
         }
         else{
-            parameters.setValue(objStudent.qrcode, forKey: "qrcode")
+            parameters.setValue(objStudent.qrcode, forKey: "uid")
 
         }
        
@@ -139,7 +139,7 @@ open class RegisterationAPI {
         let parameters = NSMutableDictionary()
         
         if objStudent.qrcode.count>0 {
-            parameters.setValue(objStudent.qrcode, forKey: "qrcode")
+            parameters.setValue(objStudent.qrcode, forKey: "uid")
         }
         
         let session = Alamofire.SessionManager.default;

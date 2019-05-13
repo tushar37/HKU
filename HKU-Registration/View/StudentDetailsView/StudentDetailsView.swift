@@ -316,9 +316,10 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.imgProfilePick.image = appDel.scaleAndRotateImage(image: pickedImage, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
-            objDetail?.student?.image = self.imgProfilePick.image!
-            self.checkTakenImage()
             self.callRegisterAPI()
+//            self.imgProfilePick.image = appDel.scaleAndRotateImage(image: pickedImage, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
+//            self.callRegisterAPI()
+//            objDetail?.student?.image = self.imgProfilePick.image!
          }
         picker.dismiss(animated: true, completion: nil)
     }
