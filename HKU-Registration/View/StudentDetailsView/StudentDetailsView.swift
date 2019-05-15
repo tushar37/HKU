@@ -194,8 +194,15 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         
         DispatchQueue.main.async {
             self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.pic)!), placeholderImage: UIImage(named: "profileImage.png"))
-            self.signatureImg.image = self.base64Convert(base64String: self.objDetail?.student?.declaration)
-                //.sd_setImage(with: URL(string: (self.objDetail?.student?.declaration)!), placeholderImage: UIImage(named: "signature.png"))
+            
+            if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
+            {
+                 self.signatureImg.sd_setImage(with: URL(string: (self.objDetail?.student?.declaration)!), placeholderImage: UIImage(named: "signature.png"))
+            }else{
+                 self.signatureImg.image = self.base64Convert(base64String: self.objDetail?.student?.declaration)
+            }
+           
+                //
         }
         self.checkProfileImage()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {

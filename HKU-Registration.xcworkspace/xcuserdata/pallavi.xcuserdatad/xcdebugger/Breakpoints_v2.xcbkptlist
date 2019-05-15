@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.544332"
+            timestampString = "579438145.5217659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.54442"
+            timestampString = "579438145.522308"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.8170559"
+            timestampString = "579603516.13554"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "397"
-            endingLineNumber = "397"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
             landmarkName = "doneClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.817202"
+            timestampString = "579603516.136499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
             landmarkName = "doneClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,23 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.817306"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "398"
-            endingLineNumber = "398"
-            landmarkName = "doneClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.81742"
+            timestampString = "579603516.1370029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "406"
@@ -105,8 +89,24 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
+            timestampString = "579603516.137502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "414"
+            endingLineNumber = "414"
+            landmarkName = "doneClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.5463049"
+            timestampString = "579438145.523373"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "176"
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.81759"
+            timestampString = "579603516.138025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "432"
-            endingLineNumber = "432"
+            startingLineNumber = "440"
+            endingLineNumber = "440"
             landmarkName = "reloadStudentDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,44 +138,30 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.817695"
+            timestampString = "579603516.138535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "403"
-            endingLineNumber = "403"
+            startingLineNumber = "411"
+            endingLineNumber = "411"
+            landmarkName = "doneClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
+            timestampString = "579603516.138999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "412"
+            endingLineNumber = "412"
             landmarkName = "doneClicked(_:)"
             landmarkType = "7">
             <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HKU_Registration.StudentDetailsView.doneClicked(__C.UIButton) -&gt; ()"
-                  moduleName = "HKU-Registration"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pallavi/Documents/GitHub/HKU/HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-                  timestampString = "576568960.968659"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "403"
-                  endingLineNumber = "403"
-                  offsetFromSymbolStart = "2034">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HKU_Registration.StudentDetailsView.doneClicked(__C.UIButton) -&gt; ()"
-                  moduleName = "HKU-Registration"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pallavi/Documents/GitHub/HKU/HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-                  timestampString = "576568960.971208"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "403"
-                  endingLineNumber = "403"
-                  offsetFromSymbolStart = "2966">
-               </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
@@ -184,12 +170,27 @@
                   moduleName = "HKU-Registration"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pallavi/Documents/GitHub/HKU/HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-                  timestampString = "576568960.974207"
+                  timestampString = "579603516.4439811"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "404"
-                  endingLineNumber = "404"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "412"
+                  endingLineNumber = "412"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HKU_Registration.StudentDetailsView.doneClicked(__C.UIButton) -&gt; ()"
+                  moduleName = "HKU-Registration"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pallavi/Documents/GitHub/HKU/HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
+                  timestampString = "579603516.447238"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "413"
+                  endingLineNumber = "413"
+                  offsetFromSymbolStart = "34">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -201,27 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.817795"
+            timestampString = "579603516.139411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "404"
-            endingLineNumber = "404"
-            landmarkName = "doneClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.817903"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "408"
-            endingLineNumber = "408"
+            startingLineNumber = "416"
+            endingLineNumber = "416"
             landmarkName = "doneClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -233,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.547845"
+            timestampString = "579438145.524007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -249,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.547906"
+            timestampString = "579438145.524168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -265,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.547965"
+            timestampString = "579438145.5244139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -281,11 +266,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.8181"
+            timestampString = "579603516.139897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "441"
-            endingLineNumber = "441"
+            startingLineNumber = "449"
+            endingLineNumber = "449"
+            landmarkName = "reloadStudentDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
+            timestampString = "579603516.140312"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "463"
+            endingLineNumber = "463"
             landmarkName = "reloadStudentDetails()"
             landmarkType = "7">
             <Locations>
@@ -297,61 +298,29 @@
                   moduleName = "HKU-Registration"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pallavi/Documents/GitHub/HKU/HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-                  timestampString = "576568961.001829"
+                  timestampString = "579603516.48308"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "441"
-                  endingLineNumber = "441"
-                  offsetFromSymbolStart = "510">
+                  startingLineNumber = "463"
+                  endingLineNumber = "463"
+                  offsetFromSymbolStart = "1381">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (HKU_Registration.DetailWrapper) -&gt; () in HKU_Registration.StudentDetailsView.reloadStudentDetails() -&gt; ()"
+                  symbolName = "closure #3 (HKU_Registration.DetailWrapper) -&gt; () in HKU_Registration.StudentDetailsView.reloadStudentDetails() -&gt; ()"
                   moduleName = "HKU-Registration"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pallavi/Documents/GitHub/HKU/HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-                  timestampString = "576568961.004518"
+                  timestampString = "579603516.4865741"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "442"
-                  endingLineNumber = "442"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "464"
+                  endingLineNumber = "464"
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.818199"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "455"
-            endingLineNumber = "455"
-            landmarkName = "reloadStudentDetails()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
-            timestampString = "576570727.81831"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "setData()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -361,7 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HKU-Registration/APIs/RegisterationAPI.swift"
-            timestampString = "576569201.549147"
+            timestampString = "579438145.525053"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
@@ -376,45 +345,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HKU-Registration/View/ScannerView/ScannerView.swift"
-            timestampString = "576570727.818459"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HKU-Registration/View/ScannerView/ScannerView.swift"
-            timestampString = "576570727.81924"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "HKU-Registration/View/LoginView/LoginView.swift"
-            timestampString = "576570727.81994"
+            timestampString = "579437481.760415"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "dropDownBtnClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HKU-Registration/View/StudentDetailsView/StudentDetailsView.swift"
+            timestampString = "579603516.14078"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
