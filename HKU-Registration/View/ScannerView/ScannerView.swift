@@ -76,8 +76,10 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
         if (txtEnterCode.text!.count == 0 && strQRCode?.count == 0){
             appDel.showAlertWith(view: self, title: "Please enter StudentID/Code or scan the QRCode")
             return
+        }else{
+           self.searchStudentDeatils()
         }
-        self.searchStudentDeatils()
+        
     }
     
     
@@ -89,7 +91,6 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
         }
         MBProgressHUD.showAdded(to: self.view, animated: true)
         let objStudent = Student()
-        objStudent.qrcode = String(format: "[%@]",qrcode)
         RegisterationAPI().getStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
             if objDetailWrapper.error == 1 { //Error
                 appDel.showAlertWith(view: self, title: objDetailWrapper.message!)
@@ -117,7 +118,7 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
         }
         MBProgressHUD.showAdded(to: self.view, animated: true)
         let objStudent = Student()
-        objStudent.qrcode = txtEnterCode.text!
+        objStudent.uid = txtEnterCode.text!
         RegisterationAPI().searchStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
             if objDetailWrapper.error == 1 { //Error
                 appDel.showAlertWith(view: self, title: objDetailWrapper.message!)

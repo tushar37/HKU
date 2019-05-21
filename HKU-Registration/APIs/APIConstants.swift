@@ -29,6 +29,9 @@ open class APIConstants {
 //    static let BASE_URL_Nursing = "https://mmi.nursing.hku.hk/api"
 //    static let BASE_URL_MBBS = "https://mmi.med.hku.hk/api"
     
+    
+   // http://test.arihantwebconsultancy.com/gala/public/api/getStudent
+    
     static let BASE_URL_Nursing = "http://test.arihantwebconsultancy.com/gala/public/api"
     static let BASE_URL_MBBS = "http://test.arihantwebconsultancy.com/mmi/public/api"
     

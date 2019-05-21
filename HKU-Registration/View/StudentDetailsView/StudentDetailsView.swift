@@ -29,8 +29,6 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     @IBOutlet weak var signatureViewWidth: NSLayoutConstraint!
     @IBOutlet weak var btnCameraOREdit: UIButton!
     @IBOutlet weak var imgProfilePick: UIImageView!
-    @IBOutlet weak var addSignatureBtn: UIButton!
-    @IBOutlet weak var signatureImg: UIImageView!
     @IBOutlet weak var lblFullName: UILabel!
     @IBOutlet weak var lblCode: UILabel!
     @IBOutlet weak var lblStatus: UILabel!
@@ -41,28 +39,19 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     @IBOutlet weak var lblCircuit: UILabel!
     @IBOutlet weak var viewBox: UIView!
     @IBOutlet weak var btnFullScreen: UIButton!
-    @IBOutlet weak var editSignatureBtn: UIButton!
-    
-    
+   
     var objDetail : DetailWrapper?
     var imagePicker = UIImagePickerController()
     var qrCode : String? = ""
     var isSearchBtnClicked : Bool = false
     @IBOutlet weak var viewColor: UIView!
-
-    // Signature View
-//    @IBOutlet weak var tittleForSignatureView: UILabel!
-//
-//    @IBOutlet weak var detailsLbl: UITextView!
-    
+ 
     let nsud = UserDefaults.standard
     
     func presentView(tittleForSignatureView:String,typeOfString:String,detailsLbl:String)
     {
         self.nsud.set(typeOfString, forKey: "SelectedOption")
-       // self.detailsLbl.text = detailsLbl
-       // self.tittleForSignatureView.text = tittleForSignatureView
-    }
+      }
     
     func signatureButtonView(btn:UIButton,color:UIColor,alpha:CGFloat)
     {
@@ -77,8 +66,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         self.viewBox.layer.borderWidth = 1.0
         self.viewBox.layer.borderColor = UIColor.gray.cgColor
         self.viewBox.clipsToBounds = true
-        signBox.layer.borderColor = UIColor.gray.cgColor
-        signBox.layer.borderWidth = 1.0
+        
         
         self.setData()
         if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
@@ -98,58 +86,21 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
      {
         blackBackgroundView.removeFromSuperview()
         signatureView.removeFromSuperview()
-        addSinatureMethod()
-        }
+         }
         
         
     }
-    func checkSignatureStatus()
-    {
-        if UIImagePNGRepresentation(signatureImg.image!) == UIImagePNGRepresentation(UIImage(named: "signature.png")!)
-        {
-            editSignatureBtn.isHidden = true
-          }else{
-            editSignatureBtn.isHidden = false
-            
-        }
-    }
-    
-    func checkTakenImage()
-    {
-                if UIImagePNGRepresentation(imgProfilePick.image!) == UIImagePNGRepresentation(UIImage(named: "profileImage.png")!) //UIImage(named: "noImage.jpg")!
-                {
-                    self.signatureButtonView(btn: addSignatureBtn, color: UIColor.lightGray, alpha: 0.2)
-                }else{
-                    self.signatureButtonView(btn: addSignatureBtn, color: UIColor.blue, alpha: 1.0)
-                }
-    }
-    
-    func callRegisterAPI()
-    {
-       if (self.objDetail?.student?.registered)! {
-            RegisterationAPI().uploadStudentImage(objStudent: (self.objDetail?.student)!, success: { (objCommon) in
-                self.reloadStudentDetails()
-            }) { (error) in
-                appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
-            }
-        }
-    }
+
     func checkProfileImage()
     {
         if (self.objDetail?.student?.registered)! {
             self.lblStatus.text="Registered"
-            //self.signatureButtonView(btn: addSignatureBtn, color: UIColor.blue)
-            addSignatureBtn.isHidden = true
-        }else{
+         }else{
             self.lblStatus.text="Un Registered"
-            self.signatureButtonView(btn: addSignatureBtn, color: UIColor.lightGray, alpha: 0.2)
-            editSignatureBtn.isHidden = true
-        }
+          }
         
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        checkProfileImage()
-//    }
+
     func base64Convert(base64String: String?) -> UIImage{
         var image = #imageLiteral(resourceName: "signature")
         if (base64String?.isEmpty)! {
@@ -167,39 +118,33 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         }
     }
     func setData(){
+        
         self.lblFullName.text = (self.objDetail?.student?.first_name)! + " " + (self.objDetail?.student?.last_name)!
-        self.lblCode.text =  self.objDetail?.student?.candidate_no
+       self.lblCode.text =  self.objDetail?.student?.uid
+        if let stationNumber = self.objDetail?.student?.station_no {
+            self.lblApplicationHash.text = stationNumber
+        }
+        if let order = self.objDetail?.student?.order {
+            self.lblID.text = order
+        }
         
         if (self.objDetail?.student?.registered)! {
             self.lblStatus.text="Registered"
             self.lblStatus.textColor = .green
             self.changeDesign()
-//            self.btnFullScreen.alpha = 1.0
-//            self.btnCameraOREdit.setImage(UIImage.init(named: "editPhoto"), for: .normal)
+
         }else{
             self.lblStatus.text="Un Registered"
             self.btnFullScreen.alpha = 0.0
-           // self.addSignatureBtn.alpha = 0.0
-            self.signatureButtonView(btn: addSignatureBtn, color: UIColor.lightGray, alpha: 0.2)
             self.btnCameraOREdit.setImage(UIImage.init(named: "camera"), for: .normal)
         }
         
-        self.lblApplicationHash.text=objDetail?.student?.app_no
-        self.lblID.text = self.objDetail?.student?.hkid_no ?? ""
-        self.lblDOB.text = self.objDetail?.student?.formatDOB()
-        self.lblGroup.text = self.objDetail?.student?.group_no
-        self.lblCircuit.attributedText=self.objDetail?.getCircut()
-       
-        self.viewColor.backgroundColor = UIColor.init(hex: (self.objDetail?.student?.color_code)!)
-        
         DispatchQueue.main.async {
             self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.pic)!), placeholderImage: UIImage(named: "profileImage.png"))
-            self.signatureImg.image = self.base64Convert(base64String: self.objDetail?.student?.declaration)
-                //.sd_setImage(with: URL(string: (self.objDetail?.student?.declaration)!), placeholderImage: UIImage(named: "signature.png"))
+           
         }
         self.checkProfileImage()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-            self.checkSignatureStatus()
          })
         
     }
@@ -207,19 +152,13 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     func changeDesign() {
         if (self.objDetail?.student?.pic.count)! > 0 {
             self.btnFullScreen.alpha = 1.0
-           // self.addSignatureBtn.alpha = 1.0
-            self.signatureButtonView(btn: addSignatureBtn, color: UIColor.blue, alpha: 1.0)
             self.btnCameraOREdit.setImage(UIImage.init(named: "editPhoto"), for: .normal)
         }
         else{
             self.btnFullScreen.alpha = 0.0
-            //self.addSignatureBtn.alpha = 0.0
-            self.signatureButtonView(btn: addSignatureBtn, color: UIColor.lightGray, alpha: 0.2)
             self.btnCameraOREdit.setImage(UIImage.init(named: "camera"), for: .normal)
         }
-//        if (self.objDetail?.student?.declaration.count)! > 0 {
-//           self.checkProfileImage()
-//        }
+
     }
     
     //MARK :: UIButton action methods
@@ -247,10 +186,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
             let objMWPhoto = MWPhoto(url: imgUrl)
             return objMWPhoto
         }
-        if let signatureUrl = URL.init(string:(self.objDetail?.student?.declaration)!){
-            let objMWPhoto = MWPhoto(url: signatureUrl)
-            return objMWPhoto
-        }
+        
         return nil
     }
     @IBAction func backBtnClick(_ sender: Any) {
@@ -316,10 +252,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.imgProfilePick.image = appDel.scaleAndRotateImage(image: pickedImage, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
-            self.callRegisterAPI()
-//            self.imgProfilePick.image = appDel.scaleAndRotateImage(image: pickedImage, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
-//            self.callRegisterAPI()
-//            objDetail?.student?.image = self.imgProfilePick.image!
+
          }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -382,12 +315,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
     @IBAction func addSignatureClicked(_ sender: UIButton) {
         shouldRotate = "YES"
         NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        if addSignatureBtn.backgroundColor == UIColor.lightGray
-        {
-          showAlertTitleMessageOnMainThread("Firstly take a picture of student", message: "")
-        }else{
-            addSinatureMethod()
-         }
+        
         
     }
     func webViewDidFinishLoad(_ webView: UIWebView) {
@@ -395,24 +323,23 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         
     }
     @IBAction func doneClicked(_ sender: UIButton) {
-        if let signature = signatureArea.getSignature(scale: 10){
-            signatureImg.image = signature
-            self.signatureImg.image = appDel.scaleAndRotateImage(image: signature, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
-            objDetail?.student?.signature = self.signatureImg.image!
-            objDetail?.student?.image = self.imgProfilePick.image!
-            signatureArea.clear()
-            RegisterationAPI().uploadStudentImage(objStudent: (self.objDetail?.student)!, success: { (objCommon) in
-                self.reloadStudentDetails()
-            }) { (error) in
-                appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
-            }
-            blackBackgroundView.removeFromSuperview()
-            signatureView.removeFromSuperview()
-            shouldRotate = "NO"
-            
-        }else{
-            self.addSubViewMethod(view: drawSignatureInstructionView)
-        }
+//    }
+//    @IBAction func doneClicked(_ sender: UIButton) {
+//        if let signature = signatureArea.getSignature(scale: 10){
+//            signatureImg.image = signature
+//            self.signatureImg.image = appDel.scaleAndRotateImage(image: signature, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
+//            objDetail?.student?.image = self.imgProfilePick.image!
+//            signatureArea.clear()
+//            RegisterationAPI().uploadStudentImage(objStudent: (self.objDetail?.student)!, success: { (objCommon) in
+//                self.reloadStudentDetails()
+//            }) { (error) in
+//                appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
+//            }
+//            blackBackgroundView.removeFromSuperview()
+//            signatureView.removeFromSuperview()
+//            shouldRotate = "NO"
+//
+//        }else{
     }
     @IBAction func okClicked(_ sender: UIButton) {
          upperLayerBlackView.removeFromSuperview()
@@ -438,7 +365,6 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         let objStudent = Student()
         
         if self.isSearchBtnClicked {
-            objStudent.qrcode = self.qrCode!
             RegisterationAPI().searchStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
                 if objDetailWrapper.error == 1 { //Error
                     appDel.showAlertWith(view: self, title: objDetailWrapper.message!)
@@ -453,8 +379,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
                 MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
             }
         }else{
-            objStudent.qrcode = String(format: "[%@]", self.qrCode!)
-            RegisterationAPI().getStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
+             RegisterationAPI().getStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
                 if objDetailWrapper.error == 1 { //Error
                     appDel.showAlertWith(view: self, title: objDetailWrapper.message!)
                 }else{     //Success
