@@ -128,19 +128,10 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
             self.lblID.text = order
         }
         
-        if (self.objDetail?.student?.registered)! {
-            self.lblStatus.text="Registered"
-            self.lblStatus.textColor = .green
-            self.changeDesign()
-
-        }else{
-            self.lblStatus.text="Un Registered"
-            self.btnFullScreen.alpha = 0.0
-            self.btnCameraOREdit.setImage(UIImage.init(named: "camera"), for: .normal)
-        }
-        
+      //   self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.image)!), placeholderImage: UIImage(named: "profileImage.png"))
         DispatchQueue.main.async {
-            self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.pic)!), placeholderImage: UIImage(named: "profileImage.png"))
+            self.imgProfilePick.image = self.objDetail?.student?.image
+         
            
         }
         self.checkProfileImage()
@@ -248,11 +239,22 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+    func callRegisterAPI()
+    {
+          RegisterationAPI().uploadStudentImage(objStudent: (self.objDetail?.student)!, success: { (objCommon) in
+                self.reloadStudentDetails()
+            }) { (error) in
+                appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
+            }
+        
+    }
+    
     //MARK :: UIImagePicker delegate method
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.imgProfilePick.image = appDel.scaleAndRotateImage(image: pickedImage, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
-
+           objDetail?.student?.image = self.imgProfilePick.image!
+            self.callRegisterAPI()
          }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -322,25 +324,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
        MBProgressHUD.hideAllHUDs(for: self.webView, animated: true)
         
     }
-    @IBAction func doneClicked(_ sender: UIButton) {
-//    }
-//    @IBAction func doneClicked(_ sender: UIButton) {
-//        if let signature = signatureArea.getSignature(scale: 10){
-//            signatureImg.image = signature
-//            self.signatureImg.image = appDel.scaleAndRotateImage(image: signature, angle: 0, flipVertical: 0, flipHorizontal: 0, targetSize: CGSize(width: 300, height: 300))
-//            objDetail?.student?.image = self.imgProfilePick.image!
-//            signatureArea.clear()
-//            RegisterationAPI().uploadStudentImage(objStudent: (self.objDetail?.student)!, success: { (objCommon) in
-//                self.reloadStudentDetails()
-//            }) { (error) in
-//                appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
-//            }
-//            blackBackgroundView.removeFromSuperview()
-//            signatureView.removeFromSuperview()
-//            shouldRotate = "NO"
-//
-//        }else{
-    }
+
     @IBAction func okClicked(_ sender: UIButton) {
          upperLayerBlackView.removeFromSuperview()
          drawSignatureInstructionView.removeFromSuperview()
