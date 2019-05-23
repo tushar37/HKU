@@ -22,7 +22,6 @@
                 <outlet property="logoImgHeight" destination="wAf-ft-blc" id="1LF-IT-Ub1"/>
                 <outlet property="logoImgView" destination="bK1-Kn-dBy" id="3vr-tY-sbC"/>
                 <outlet property="logoImgWidth" destination="8eU-j5-UKX" id="PvR-Fg-rO6"/>
-                <outlet property="tittleLbl" destination="7dv-Q5-TFh" id="743-0B-gah"/>
                 <outlet property="txtPassword" destination="n7w-Zi-DCx" id="jh0-he-7gD"/>
                 <outlet property="txtUserName" destination="JKt-mC-XP6" id="bYY-zM-h8q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -39,23 +38,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oV-xA-So3">
                             <rect key="frame" x="8" y="8" width="584" height="320"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NursingImageHKU" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GALA" translatesAutoresizingMaskIntoConstraints="NO" id="bK1-Kn-dBy">
                                     <rect key="frame" x="67" y="50" width="450" height="180"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="450" id="8eU-j5-UKX"/>
                                         <constraint firstAttribute="height" constant="180" id="wAf-ft-blc"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LKS Faculty of medicine | School of Nursing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dv-Q5-TFh">
-                                    <rect key="frame" x="10" y="230" width="564" height="37"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="37" id="8ey-ao-PkQ"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="26"/>
-                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-qb-a6m">
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y30-qb-a6m">
                                     <rect key="frame" x="276" y="287" width="32" height="0.0"/>
                                     <constraints>
                                         <constraint firstAttribute="height" id="3em-xX-CXB"/>
@@ -70,20 +60,15 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="y30-qb-a6m" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="DIr-Cc-dCl"/>
-                                <constraint firstAttribute="trailing" secondItem="7dv-Q5-TFh" secondAttribute="trailing" constant="10" id="Ewr-hk-ekq"/>
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="top" secondItem="1oV-xA-So3" secondAttribute="top" constant="50" id="JrB-7S-dQ9"/>
-                                <constraint firstItem="7dv-Q5-TFh" firstAttribute="leading" secondItem="1oV-xA-So3" secondAttribute="leading" constant="10" id="Q3N-fn-rFK"/>
                                 <constraint firstItem="bK1-Kn-dBy" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="VQ9-SP-mk3"/>
-                                <constraint firstItem="7dv-Q5-TFh" firstAttribute="centerX" secondItem="1oV-xA-So3" secondAttribute="centerX" id="qf1-Xv-mxF"/>
-                                <constraint firstItem="7dv-Q5-TFh" firstAttribute="top" secondItem="bK1-Kn-dBy" secondAttribute="bottom" id="tDr-25-Aha"/>
-                                <constraint firstItem="y30-qb-a6m" firstAttribute="top" secondItem="7dv-Q5-TFh" secondAttribute="bottom" constant="20" id="v39-Bm-x8l"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K9-h3-0Y0">
                             <rect key="frame" x="8" y="336" width="584" height="320"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHG-Na-9Da" customClass="RNLoadingButton" customModule="RNLoadingButton_Swift">
-                                    <rect key="frame" x="142" y="212" width="300" height="60"/>
+                                    <rect key="frame" x="142" y="182" width="300" height="60"/>
                                     <color key="backgroundColor" red="0.0039215686274509803" green="0.35294117647058826" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="Lde-uN-3KA"/>
@@ -97,7 +82,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-ng-edQ">
-                                    <rect key="frame" x="105" y="155" width="374" height="1"/>
+                                    <rect key="frame" x="105" y="125" width="374" height="1"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.24727097602739725" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="JZ8-GP-rJC"/>
@@ -107,7 +92,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA9-SC-aL4">
-                                    <rect key="frame" x="105" y="94" width="374" height="1"/>
+                                    <rect key="frame" x="105" y="64" width="374" height="1"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.24727097602739725" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="pzu-IB-XbB"/>
@@ -117,7 +102,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name or Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-mC-XP6">
-                                    <rect key="frame" x="122" y="50" width="340" height="40"/>
+                                    <rect key="frame" x="122" y="20" width="340" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="qie-DT-fd0"/>
                                     </constraints>
@@ -129,7 +114,7 @@
                                     </connections>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7w-Zi-DCx">
-                                    <rect key="frame" x="122" y="111" width="340" height="40"/>
+                                    <rect key="frame" x="122" y="81" width="340" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="TQy-aL-Rha"/>
                                     </constraints>
@@ -147,12 +132,12 @@
                                 <constraint firstItem="pA9-SC-aL4" firstAttribute="leading" secondItem="0K9-h3-0Y0" secondAttribute="leading" constant="105" id="IBm-Fa-Ggo"/>
                                 <constraint firstItem="rHG-ng-edQ" firstAttribute="top" secondItem="n7w-Zi-DCx" secondAttribute="bottom" constant="4" id="KiQ-zh-qKK"/>
                                 <constraint firstAttribute="trailing" secondItem="LHG-Na-9Da" secondAttribute="trailing" constant="142" id="fH2-M4-8UG"/>
-                                <constraint firstItem="JKt-mC-XP6" firstAttribute="top" secondItem="0K9-h3-0Y0" secondAttribute="top" constant="50" id="fq0-Sr-Fwu"/>
+                                <constraint firstItem="JKt-mC-XP6" firstAttribute="top" secondItem="0K9-h3-0Y0" secondAttribute="top" constant="20" id="fq0-Sr-Fwu"/>
                                 <constraint firstAttribute="trailing" secondItem="n7w-Zi-DCx" secondAttribute="trailing" constant="122" id="il0-VD-L0E"/>
                                 <constraint firstAttribute="trailing" secondItem="pA9-SC-aL4" secondAttribute="trailing" constant="105" id="jVT-8a-ay6"/>
                                 <constraint firstItem="rHG-ng-edQ" firstAttribute="leading" secondItem="0K9-h3-0Y0" secondAttribute="leading" constant="105" id="mLd-qY-9hm"/>
                                 <constraint firstAttribute="trailing" secondItem="rHG-ng-edQ" secondAttribute="trailing" constant="105" id="o8F-tT-56c"/>
-                                <constraint firstAttribute="bottom" secondItem="LHG-Na-9Da" secondAttribute="bottom" constant="48" id="p8M-nf-7pu"/>
+                                <constraint firstAttribute="bottom" secondItem="LHG-Na-9Da" secondAttribute="bottom" constant="78" id="p8M-nf-7pu"/>
                                 <constraint firstAttribute="trailing" secondItem="JKt-mC-XP6" secondAttribute="trailing" constant="122" id="ssp-ip-Me8"/>
                                 <constraint firstAttribute="height" constant="320" id="tvT-cS-g2I"/>
                                 <constraint firstItem="JKt-mC-XP6" firstAttribute="leading" secondItem="0K9-h3-0Y0" secondAttribute="leading" constant="122" id="vh5-6Y-Bgh"/>
@@ -187,7 +172,7 @@
         </view>
     </objects>
     <resources>
-        <image name="NursingImageHKU" width="548.4000244140625" height="92.639999389648438"/>
+        <image name="GALA" width="4642" height="992"/>
         <image name="dropdown-1" width="491.51998901367188" height="303.3599853515625"/>
     </resources>
 </document>

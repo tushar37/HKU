@@ -21,6 +21,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         print("finish drawing")
     }
     
+    @IBOutlet weak var mainView: UIView!
     var shouldRotate = ""
     
     @IBOutlet weak var signBox: UIView!
@@ -66,8 +67,6 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         self.viewBox.layer.borderWidth = 1.0
         self.viewBox.layer.borderColor = UIColor.gray.cgColor
         self.viewBox.clipsToBounds = true
-        
-        
         self.setData()
         if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
         {
@@ -87,19 +86,18 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         blackBackgroundView.removeFromSuperview()
         signatureView.removeFromSuperview()
          }
-        
-        
     }
 
     func checkProfileImage()
     {
         if (self.objDetail?.student?.registered)! {
+            self.lblStatus.textColor = UIColor.green
             self.lblStatus.text="Registered"
          }else{
+            self.lblStatus.textColor = UIColor.red
             self.lblStatus.text="Un Registered"
           }
-        
-    }
+     }
 
     func base64Convert(base64String: String?) -> UIImage{
         var image = #imageLiteral(resourceName: "signature")
@@ -127,13 +125,10 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         if let order = self.objDetail?.student?.order {
             self.lblID.text = order
         }
-        
-      //   self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.image)!), placeholderImage: UIImage(named: "profileImage.png"))
+   
         DispatchQueue.main.async {
-            self.imgProfilePick.image = self.objDetail?.student?.image
-         
-           
-        }
+            self.imgProfilePick.sd_setImage(with: URL(string: (self.objDetail?.student?.pic)!), placeholderImage: UIImage(named: "profileImage.png"))
+         }
         self.checkProfileImage()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
          })
@@ -237,6 +232,24 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    private func reloadInfo() {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        let objStudent = Student()
+        RegisterationAPI().getStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
+            if objDetailWrapper.error == 1 { //Error
+                appDel.showAlertWith(view: self, title: objDetailWrapper.message!)
+            }else{     //Success
+                print("Detail Wrapper \(objDetailWrapper)")
+                self.objDetail = objDetailWrapper
+                self.setData()
+            }
+            MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+        }) { (error) in
+            appDel.showAlertWith(view: self, title: SSError.getErrorMessage(error))
+            MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+        }
     }
     
     func callRegisterAPI()
@@ -346,10 +359,10 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
         }
         
         MBProgressHUD.showAdded(to: self.view, animated: true)
-        let objStudent = Student()
+        let objStudent = self.objDetail?.student
         
         if self.isSearchBtnClicked {
-            RegisterationAPI().searchStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
+            RegisterationAPI().searchStudentDetail(objStudent: objStudent!, success: { (objDetailWrapper) in
                 if objDetailWrapper.error == 1 { //Error
                     appDel.showAlertWith(view: self, title: objDetailWrapper.message!)
                 }else{     //Success
@@ -363,7 +376,7 @@ class StudentDetailsView: UIViewController,UIImagePickerControllerDelegate,UINav
                 MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
             }
         }else{
-             RegisterationAPI().getStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
+            RegisterationAPI().getStudentDetail(objStudent: objStudent!, success: { (objDetailWrapper) in
                 if objDetailWrapper.error == 1 { //Error
                     appDel.showAlertWith(view: self, title: objDetailWrapper.message!)
                 }else{     //Success

@@ -159,7 +159,9 @@ open class RegisterationAPI {
         let parameters = NSMutableDictionary()
         let imageData = UIImagePNGRepresentation(objStudent.image)
         let base64String =  imageData?.base64EncodedString()
+        parameters.setValue(objStudent.id, forKey: "student_id")
         parameters.setValue(base64String, forKey: "pic")
+        
 
         let session = Alamofire.SessionManager.default;
         session.session.configuration.urlCache = nil

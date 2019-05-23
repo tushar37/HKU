@@ -9,6 +9,7 @@
 import UIKit
 class Student: EVModelModified {
     var first_name      :String = ""
+    var id              :String = ""
     var last_name       :String = ""
     var pic             :String = ""
     var uid             :String = ""

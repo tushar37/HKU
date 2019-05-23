@@ -13,7 +13,7 @@
         <array key="GOTHIC.TTF">
             <string>CenturyGothic</string>
         </array>
-        <array key="GOTHICBI.TTF">
+        <array key="gothicb.ttf">
             <string>CenturyGothic-Bold</string>
         </array>
     </customFonts>
@@ -32,6 +32,7 @@
                 <outlet property="lblGroup" destination="aNw-qO-d2A" id="tjy-Kg-tjF"/>
                 <outlet property="lblID" destination="knb-up-mpS" id="cZf-l5-VRU"/>
                 <outlet property="lblStatus" destination="g2u-5l-XsA" id="Ul1-KQ-nYg"/>
+                <outlet property="mainView" destination="3Bf-4V-Tfm" id="JI6-j6-9eJ"/>
                 <outlet property="signatureArea" destination="gBH-EG-Uj4" id="XJX-aj-3CN"/>
                 <outlet property="signatureView" destination="wvt-vj-Q4h" id="Aw6-vs-p1Y"/>
                 <outlet property="signatureViewWidth" destination="i4L-jN-aIa" id="qv8-8U-9Dr"/>
@@ -270,7 +271,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="g2u-5l-XsA" firstAttribute="trailing" secondItem="tMm-sF-S5U" secondAttribute="trailing" id="1in-kT-IF6"/>
                         <constraint firstItem="Tl6-rE-bTZ" firstAttribute="trailing" secondItem="fLB-HC-MRp" secondAttribute="trailing" id="2DS-hL-rr5"/>

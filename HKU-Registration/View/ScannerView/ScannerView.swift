@@ -10,9 +10,8 @@ import UIKit
 import MBProgressHUD
 class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
     @IBOutlet weak var logoImgView: UIImageView!
-    @IBOutlet weak var tittleLbl: UILabel!
     let nsud = UserDefaults.standard
-    @IBOutlet weak var lblEventName: UILabel!
+   // @IBOutlet weak var lblEventName: UILabel!
     @IBOutlet weak var txtEnterCode: UITextField!
     
     @IBOutlet weak var logoImgWidth: NSLayoutConstraint!
@@ -26,23 +25,17 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
         self.logoImgView.image = UIImage(named: imageName)
         self.logoImgWidth.constant = logoWidth
         self.logoImgHeight.constant = logoHeight
-        self.tittleLbl.text = tittle
-    }
+      }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setData()
-        if UserDefaults.standard.string(forKey: "SelectedOption") == "Nursing"
-        {
-            self.presentView(imageName: "NursingImageHKU.png", logoWidth: 450, logoHeight: 120, tittle: "LKS Faculty of medicine | School of Nursing", typeOfString: "Nursing")
-        }else{
-            self.presentView(imageName: "MedicalImageHKU.png", logoWidth: 450, logoHeight: 120, tittle: "Li Ka Shing Faculty of Medicine", typeOfString: "MBBS")
-        }
+
         
     }
     
     func setData() {
-        self.lblEventName.text = objUser?.event_name
+      //  self.lblEventName.text = objUser?.event_name
     }
     
     //MARK :: UIButton action methods
@@ -74,7 +67,7 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
     @IBAction func searchBtnClick(_ sender: Any) {
         self.view.endEditing(true)
         if (txtEnterCode.text!.count == 0 && strQRCode?.count == 0){
-            appDel.showAlertWith(view: self, title: "Please enter StudentID/Code or scan the QRCode")
+            appDel.showAlertWith(view: self, title: "Please enter StudentID")
             return
         }else{
            self.searchStudentDeatils()

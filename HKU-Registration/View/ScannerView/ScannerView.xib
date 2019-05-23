@@ -13,18 +13,13 @@
         <array key="GOTHIC.TTF">
             <string>CenturyGothic</string>
         </array>
-        <array key="GOTHICBI.TTF">
-            <string>CenturyGothic-Bold</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerView" customModule="HKU_Registration" customModuleProvider="target">
             <connections>
-                <outlet property="lblEventName" destination="QtX-9O-1aG" id="d0L-LL-07o"/>
                 <outlet property="logoImgHeight" destination="uge-ak-zKH" id="snf-gq-TEw"/>
                 <outlet property="logoImgView" destination="fh3-hS-tKW" id="Waq-Ox-LqK"/>
                 <outlet property="logoImgWidth" destination="f3r-Pg-ub3" id="vab-mL-soA"/>
-                <outlet property="tittleLbl" destination="fir-81-0dT" id="10V-Bi-L4d"/>
                 <outlet property="txtEnterCode" destination="yji-VL-Bhn" id="Rte-nA-HLM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,11 +48,11 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btB-wt-pOn">
                             <rect key="frame" x="8" y="8" width="584" height="320"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-hS-tKW">
-                                    <rect key="frame" x="67" y="75" width="450" height="120"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GALA" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-hS-tKW">
+                                    <rect key="frame" x="57" y="75" width="470" height="160"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="450" id="f3r-Pg-ub3"/>
-                                        <constraint firstAttribute="height" constant="120" id="uge-ak-zKH"/>
+                                        <constraint firstAttribute="width" constant="470" id="f3r-Pg-ub3"/>
+                                        <constraint firstAttribute="height" constant="160" id="uge-ak-zKH"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16 June 2018 09.30 AM - 16 June 2018 01.30 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-gH-JHd">
@@ -67,27 +62,11 @@
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June MMI - Session A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtX-9O-1aG">
-                                    <rect key="frame" x="190" y="252" width="204" height="25"/>
-                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
-                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LKS Faculty of medicine | School of Nursing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-81-0dT">
-                                    <rect key="frame" x="61.5" y="217" width="461.5" height="27"/>
-                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
-                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="fh3-hS-tKW" firstAttribute="centerX" secondItem="btB-wt-pOn" secondAttribute="centerX" id="FEf-Ha-QjG"/>
                                 <constraint firstItem="fh3-hS-tKW" firstAttribute="top" secondItem="btB-wt-pOn" secondAttribute="top" constant="75" id="lON-yp-dee"/>
-                                <constraint firstItem="fir-81-0dT" firstAttribute="centerX" secondItem="btB-wt-pOn" secondAttribute="centerX" id="rAG-jd-CIt"/>
-                                <constraint firstItem="QtX-9O-1aG" firstAttribute="top" secondItem="fir-81-0dT" secondAttribute="bottom" constant="8" id="rSB-gO-Hu4"/>
-                                <constraint firstItem="QtX-9O-1aG" firstAttribute="centerX" secondItem="btB-wt-pOn" secondAttribute="centerX" id="sJE-jM-80y"/>
-                                <constraint firstItem="fir-81-0dT" firstAttribute="top" secondItem="fh3-hS-tKW" secondAttribute="bottom" constant="22" id="wP5-53-QE1"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSg-H9-gJ8">
@@ -97,7 +76,7 @@
                                     <rect key="frame" x="0.0" y="24" width="584" height="100"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-bN-YKf">
-                                            <rect key="frame" x="167" y="72" width="282" height="1"/>
+                                            <rect key="frame" x="167" y="69" width="282" height="1"/>
                                             <color key="backgroundColor" white="0.66666666669999997" alpha="0.247270976" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="lij-S0-cV6"/>
@@ -107,8 +86,8 @@
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="U031" placeholder="Enter Student ID/Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yji-VL-Bhn">
-                                            <rect key="frame" x="167" y="28" width="250" height="40"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="u031" placeholder="Enter Student ID/Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yji-VL-Bhn">
+                                            <rect key="frame" x="167" y="25" width="250" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="250" id="MgX-IV-XMK"/>
                                                 <constraint firstAttribute="height" constant="40" id="Xb1-Cx-eOu"/>
@@ -177,7 +156,7 @@
                                         <constraint firstItem="Hnf-QL-HSt" firstAttribute="top" secondItem="MmQ-Os-cRW" secondAttribute="top" id="bc8-GW-QeB"/>
                                         <constraint firstItem="nbh-bN-YKf" firstAttribute="leading" secondItem="yji-VL-Bhn" secondAttribute="leading" id="ndS-pt-kxA"/>
                                         <constraint firstAttribute="bottom" secondItem="Hnf-QL-HSt" secondAttribute="bottom" id="qVn-1t-vcz"/>
-                                        <constraint firstItem="yji-VL-Bhn" firstAttribute="top" secondItem="MmQ-Os-cRW" secondAttribute="top" constant="28" id="wd4-YW-oDT"/>
+                                        <constraint firstItem="yji-VL-Bhn" firstAttribute="top" secondItem="MmQ-Os-cRW" secondAttribute="top" constant="25" id="wd4-YW-oDT"/>
                                         <constraint firstAttribute="trailing" secondItem="Hnf-QL-HSt" secondAttribute="trailing" constant="16" id="z6t-1q-nV8"/>
                                     </constraints>
                                 </view>
@@ -234,7 +213,7 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="346" height="54"/>
+        <image name="GALA" width="4642" height="992"/>
         <image name="logout" width="135" height="135"/>
         <image name="qrscanner" width="135" height="135"/>
         <image name="slash" width="135" height="135"/>
