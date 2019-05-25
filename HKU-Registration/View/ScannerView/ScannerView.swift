@@ -84,6 +84,7 @@ class ScannerView: UIViewController ,QRCodeScannerViewControllerDelegate {
         }
         MBProgressHUD.showAdded(to: self.view, animated: true)
         let objStudent = Student()
+        objStudent.qrCode = qrcode
         RegisterationAPI().getStudentDetail(objStudent: objStudent, success: { (objDetailWrapper) in
             if objDetailWrapper.error == 1 { //Error
                 appDel.showAlertWith(view: self, title: objDetailWrapper.message!)

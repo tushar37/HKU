@@ -13,6 +13,7 @@ class Student: EVModelModified {
     var last_name       :String = ""
     var pic             :String = ""
     var uid             :String = ""
+    var qrCode             :String = ""
     var station_no      :String = ""
     var order           :String = ""
     var registered      :Bool = false

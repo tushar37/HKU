@@ -89,6 +89,7 @@ open class RegisterationAPI {
                           failure: @escaping (Error?)-> Void)
     {
         let parameters = NSMutableDictionary()
+         parameters.setValue(objStudent.qrCode, forKey: "uid")
         var jsonObject: [Any]? = nil
         let session = Alamofire.SessionManager.default;
         session.session.configuration.urlCache = nil
@@ -124,6 +125,8 @@ open class RegisterationAPI {
         let parameters = NSMutableDictionary()
         if objStudent.uid.count>0 {
             parameters.setValue(objStudent.uid, forKey: "uid")
+        }else{
+            parameters.setValue(objStudent.qrCode, forKey: "uid")
         }
         let session = Alamofire.SessionManager.default;
         session.session.configuration.urlCache = nil
