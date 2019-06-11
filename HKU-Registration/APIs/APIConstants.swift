@@ -23,8 +23,8 @@ open class APIConstants {
     //https://mmi.nursing.hku.hk/api/login
     
     
-    let base = "http://test.arihantwebconsultancy.com/mmi/public/api/"
-    
+   // let base = "http://test.arihantwebconsultancy.com/mmi/public/api/"
+    let base = "https://eygaladay.med.hku.hk/api/"
     
 //    static let BASE_URL_Nursing = "https://mmi.nursing.hku.hk/api"
 //    static let BASE_URL_MBBS = "https://mmi.med.hku.hk/api"
@@ -32,8 +32,13 @@ open class APIConstants {
     
    // http://test.arihantwebconsultancy.com/gala/public/api/getStudent
     
-    static let BASE_URL_Nursing = "http://test.arihantwebconsultancy.com/gala/public/api"
-    static let BASE_URL_MBBS = "http://test.arihantwebconsultancy.com/mmi/public/api"
+//    static let BASE_URL_Nursing = "http://test.arihantwebconsultancy.com/gala/public/api"
+//    static let BASE_URL_MBBS = "http://test.arihantwebconsultancy.com/mmi/public/api"
+    
+    static let BASE_URL_Nursing = "https://eygaladay.med.hku.hk/api"
+    static let BASE_URL_MBBS = "https://eygaladay.med.hku.hk/api"
+    
+    
     
     static let APP_VERSION = "1.0"
     static let APP_LOCALE = "en"
